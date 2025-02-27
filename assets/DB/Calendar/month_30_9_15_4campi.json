@@ -1,0 +1,6275 @@
+{            
+    "1": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "2": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "3": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "4": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "5": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "6": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "7": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "8": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "9": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "10": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "11": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "12": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "13": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "14": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "15": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "16": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "17": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "18": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "19": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "20": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "21": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+
+
+    },
+    "22": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "23": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "24": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "25": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "26": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "27": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "28": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "29": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    },
+    "30": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "10": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "11": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "12": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "13": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "14": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    },
+        "15": {
+            "user": "",
+            "isTimeAvailable": true,
+            "half_hour": true,
+            "user_half": ""
+        
+    }
+},
+
+"Campo 3": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+},
+
+"Campo 4": {
+    "09": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "10": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "11": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "12": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "13": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "14": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+},
+    "15": {
+        "user": "",
+        "isTimeAvailable": true,
+        "half_hour": true,
+        "user_half": ""
+    
+}
+}
+    }
+    
+}

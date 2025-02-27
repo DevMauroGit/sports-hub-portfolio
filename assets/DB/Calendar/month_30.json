@@ -1,0 +1,4616 @@
+{ 
+            
+    "1": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+
+
+    },
+    "2": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+    },
+    "3": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+    },
+    "4": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+    },
+    "5": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+    },
+    "6": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+    },
+    "7": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+    },
+    "8": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+    },
+    "9": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+    },
+    "10": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+    },
+    "11": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+
+
+    },
+    "12": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+    },
+    "13": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+    },
+    "14": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+    },
+    "15": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+    },
+    "16": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+    },
+    "17": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+    },
+    "18": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+    },
+    "19": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+    },
+    "20": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+    },
+    "21": {
+        "Campo 1": {
+            "09:00 - 09:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "09:30 - 10:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:00 - 10:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "10:30 - 11:00": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:00 - 11:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        },
+            "11:30 - 12:00": {
+                "isTimeAvailable": true
+            
+        },
+            "12:00 - 12:30": {
+                "user": "",
+                "isTimeAvailable": true
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+"09:00 - 09:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"09:30 - 10:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:00 - 10:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"10:30 - 11:00": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:00 - 11:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+},
+"11:30 - 12:00": {
+    "isTimeAvailable": true
+
+},
+"12:00 - 12:30": {
+    "user": "",
+    "isTimeAvailable": true
+
+}
+}
+
+
+    },
+    "22": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+}
+    },
+    "23": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+}
+    },
+    "24": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+}
+
+    },
+    "25": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+}
+    },
+    "26": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+}
+    },
+    "27": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+}
+    },
+    "28": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+}
+    },
+    "29": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+}
+    },
+    "30": {
+        "Campo 1": {
+            "09": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "10": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "11": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "12": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "13": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "14": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        },
+            "15": {
+                "user": "",
+                "isTimeAvailable": true,
+                "half_hour": true,
+                "user_half": ""
+            
+        }
+    },
+
+    "Campo 2": {
+        "09:00 - 09:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "09:30 - 10:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:00 - 10:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "10:30 - 11:00": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:00 - 11:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    },
+        "11:30 - 12:00": {
+            "isTimeAvailable": true
+        
+    },
+        "12:00 - 12:30": {
+            "user": "",
+            "isTimeAvailable": true
+        
+    }
+},
+
+"Campo 3": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+},
+
+"Campo 4": {
+    "09:00 - 09:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "09:30 - 10:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:00 - 10:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "10:30 - 11:00": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:00 - 11:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+},
+    "11:30 - 12:00": {
+        "isTimeAvailable": true
+    
+},
+    "12:00 - 12:30": {
+        "user": "",
+        "isTimeAvailable": true
+    
+}
+}
+    }
+    
+}

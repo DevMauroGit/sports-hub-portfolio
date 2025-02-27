@@ -1,0 +1,16 @@
+{
+    "Calendario": {
+        "01_Gennaio": true,
+        "02_Febbraio": true,
+        "03_Marzo": true,
+        "04_Aprile": true,
+        "05_Maggio": true,
+        "06_Giugno": true,
+        "07_Luglio": true,
+        "08_Agosto": true,
+        "09_Settembre": true,
+        "10_Ottobre": true,
+        "11_Novembre": true,
+        "12_Dicembre": true
+    }
+}

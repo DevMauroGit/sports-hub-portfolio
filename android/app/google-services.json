@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "101782497272",
+    "firebase_url": "https://sports-hub-2710-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "sports-hub-2710",
+    "storage_bucket": "sports-hub-2710.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:101782497272:android:ceb44143573a5738fed80d",
+        "android_client_info": {
+          "package_name": "com.sport_hub_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "101782497272-3dprg6mbvcpnl2319t7sl6ug8dfcahr5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sport_hub_app",
+            "certificate_hash": "335c97e34b8badd71e39778fa61bad70361e4a5a"
+          }
+        },
+        {
+          "client_id": "101782497272-7fi59ok0aark6nt6c4ron2r5289ssdfj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sport_hub_app",
+            "certificate_hash": "3aee96cab2169657b8a548c03d58c576d7baa7be"
+          }
+        },
+        {
+          "client_id": "101782497272-mlfl3qusd3ebk4mo4p44sa1pgeclvu3i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sport_hub_app",
+            "certificate_hash": "a07ae5c23acedd646a223e24309b55d39707bd08"
+          }
+        },
+        {
+          "client_id": "101782497272-36t8fe1s2v8gf41cbipe66qmgut3ihat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwoFWFtXUuI_q8aMeFBJ56LzG863GGfe4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "101782497272-36t8fe1s2v8gf41cbipe66qmgut3ihat.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "101782497272-5h6i59h2ebcut70c62lqngb8uohposhe.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.sportHubApp.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
