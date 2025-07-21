@@ -1,6 +1,8 @@
 Sports Hub App
 Sports Hub is a multi-functional sports field booking app, developed entirely by me as a personal portfolio project to showcase my skills and experience for my resume. No AI was used in the core development — only for writing post-production comments.
 
+This application has been successfully launched and is currently available on both the iOS App Store and Google Play Store.
+
 Overview
 This app allows users to book sports fields, create and manage matches, and connect with friends to organize games. It’s designed to be a comprehensive platform for sports enthusiasts, featuring:
 
