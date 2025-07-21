@@ -4,6 +4,8 @@ Sports Hub is a multi-functional sports field booking app, developed entirely by
 Overview
 This app allows users to book sports fields, create and manage matches, and connect with friends to organize games. It’s designed to be a comprehensive platform for sports enthusiasts, featuring:
 
+Firebase build
+
 User authentication with login and signup
 
 Home page with personalized content
@@ -47,4 +49,5 @@ Bloc pattern for state management
 GetX for snackbars and other utilities
 
 Important Notice
-This repository contains a presentation version of the app intended for portfolio purposes only. It is not actively maintained or updated. Therefore, simply cloning this repository and trying to run the app will not work without additional setup and configuration.
+This repository is created specifically for portfolio presentation purposes and does not include the complete set of files from the active, original project. It is not maintained or updated, so cloning and running the app as-is will require additional setup and configuration.
+
