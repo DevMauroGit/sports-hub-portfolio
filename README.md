@@ -1,5 +1,5 @@
 
-<img width="1080" height="2392" alt="sh_start" src="https://github.com/user-attachments/assets/4c922e73-0109-421f-bb42-7c39423d49ba" />  
+<img width="300" height="700" alt="sh_start" src="https://github.com/user-attachments/assets/4c922e73-0109-421f-bb42-7c39423d49ba" />  
 
 
 Sports Hub App
