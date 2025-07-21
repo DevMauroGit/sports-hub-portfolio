@@ -85,7 +85,6 @@ class SearchClubCard extends StatelessWidget {
                         alignment: Alignment.center,
                         child: const CircularProgressIndicator(),
                       ),
-                      //errorWidget: (context, url, error) => Image.asset("assets/images/arena.jpg")
                     ),
                     clubs['premium']
                         ? Positioned(

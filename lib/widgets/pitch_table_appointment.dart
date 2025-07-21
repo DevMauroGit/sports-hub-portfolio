@@ -170,8 +170,6 @@ class _PitchTableAppointmentState extends State<PitchTableAppointment> {
                   width: w * 0.65,
                   child: SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
-                    //child: Padding(
-                    //padding: const EdgeInsets.only(left: 8.0, right: 8.0),
                     child: Column(
                       children: [
                         SizedBox(
@@ -184,7 +182,6 @@ class _PitchTableAppointmentState extends State<PitchTableAppointment> {
                                 for (int i = 0; i < widget.club['slot']; i++)
                                   Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
-                                    //crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
                                       Container(
                                           width: w > 385 ? w * 0.2 : w * 0.225,
@@ -329,7 +326,6 @@ class _PitchTableAppointmentState extends State<PitchTableAppointment> {
                                             min = 0;
 
                                             String b_hour = hour;
-                                            //int b_minutes_int = 60 - widget.club['b_minutes'] as int;
                                             String monthN =
                                                 '${widget.daySelected.month}';
                                             String dayN =
@@ -441,7 +437,6 @@ class _PitchTableAppointmentState extends State<PitchTableAppointment> {
                                                   '$before_c_hour_int';
                                             }
 
-                                            //int b_minutes_int = widget.club['b_minutes'] as int;
 
                                             if (b_minutes_int < 10) {
                                               b_minutes = '0$b_minutes_int';
@@ -455,8 +450,6 @@ class _PitchTableAppointmentState extends State<PitchTableAppointment> {
                                               c_minutes = '$c_minutes_int';
                                             }
 
-                                            print(
-                                                '2024-$monthN-$dayN $b_hour:$b_minutes:00');
 
                                             if (profile['prenotazioniPremium'] <
                                                     2 &&
@@ -480,8 +473,6 @@ class _PitchTableAppointmentState extends State<PitchTableAppointment> {
                                                   .email as String;
                                               int next_hour = 10;
                                               int previous_hour = 0;
-
-                                              //DocumentSnapshot snap = await FirebaseFirestore.instance.collection('Clubs').doc(widget.club['mail']).get()
 
                                               for (int i = 0;
                                                   i < widget.pitch['last_hour'];
@@ -507,7 +498,6 @@ class _PitchTableAppointmentState extends State<PitchTableAppointment> {
                                                 }
                                               }
 
-                                              //b_minutes = 45;
                                               for (int i = 10; i < 24; i++) {
                                                 if (snapshot == '$i') {
                                                   b_hour = '${i + 1}';
@@ -914,7 +904,6 @@ class _PitchTableAppointmentState extends State<PitchTableAppointment> {
                                                   '$before_c_hour_int';
                                             }
 
-                                            //int b_minutes_int = widget.club['b_minutes'] as int;
 
                                             if (b_minutes_int < 10) {
                                               b_minutes = '0$b_minutes_int';
@@ -928,9 +917,6 @@ class _PitchTableAppointmentState extends State<PitchTableAppointment> {
                                               c_minutes = '$c_minutes_int';
                                             }
 
-                                            print(
-                                                '2024-$monthN-$dayN $b_hour:$b_minutes:00');
-                                            print(availableTime[0]);
 
                                             if (profile['prenotazioniPremium'] <
                                                     2 &&
@@ -999,7 +985,6 @@ class _PitchTableAppointmentState extends State<PitchTableAppointment> {
                                                         min = 30;
 
                                                         String b_hour = hour;
-                                                        // String b_minutes = '';
 
                                                         for (int i = 11;
                                                             i < 24;
@@ -1011,8 +996,6 @@ class _PitchTableAppointmentState extends State<PitchTableAppointment> {
                                                             b_hour = '08';
                                                           }
                                                         }
-
-                                                        //int b_minutes = (widget.club['b_minutes'] as int) - 30;
 
                                                         String monthN =
                                                             '${widget.daySelected.month}';
@@ -1118,8 +1101,6 @@ class _PitchTableAppointmentState extends State<PitchTableAppointment> {
                                                           before_c_hour =
                                                               '$before_c_hour_int';
                                                         }
-
-                                                        //int b_minutes_int = widget.club['b_minutes'] as int;
 
                                                         if (b_minutes_int <
                                                             10) {
@@ -1851,18 +1832,9 @@ void sendPushMessage(String token) async {
         headers: {
           'Content-Type': 'application/json',
           'Authorization':
-              'key=AAAAF7K1p_g:APA91bEmcWt3BsUkuQVdz3fwpQ5Z64JPlyqJHlHQZu3DDrscPdhonZOc0Ck8zKedfMTEezCCarEm4TmNMbO5JJ4MVQaSEgCHu7lJwFeCogjXX3Cc4fsC0MLnARnLl3xpS21LVCarNuav',
         },
         body: jsonEncode({
           'priority': 'high',
-          //     'data': {
-          //       'click_action': 'FLUTTER_NOTIFICATION_CLICK',
-          //       'status': 'done',
-          //       'body': 'Controlla il calendario, nuovi campi sono stati prenotati.',
-          //       'title': 'Nuova Prenotazione!',
-          //       'android_channel_id': 'sportshub'
-          //     },
-
           'notification': {
             'title': 'Nuova Prenotazione!',
             'body':

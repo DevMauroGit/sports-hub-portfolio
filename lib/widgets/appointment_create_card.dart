@@ -15,11 +15,9 @@ import 'package:sports_hub_ios/widgets/Crea_Match/football_create_results_page.d
 
 Widget AppointmentCreateCard(
     {required Map appointment, h, w, context, profile, sport}) {
-  // ignore: non_constant_identifier_names, unused_local_variable
   String b_hour = '';
   String a_hour = '';
   String hour = appointment['hour'];
-  // ignore: non_constant_identifier_names, unused_local_variable
   String b_minutes = '30';
   String minutes = '00';
 
@@ -92,7 +90,6 @@ Widget AppointmentCreateCard(
                     ),
                     SizedBox(height: h * 0.01),
                     Container(
-                      //margin: EdgeInsets.symmetric(horizontal: h * 0.02),
                       child: Column(
                         children: [
                           Row(
@@ -232,9 +229,6 @@ Widget AppointmentCreateCard(
                                           '2024-${appointment['meseN']}-${appointment['dayN']} $hour:$minutes:00')
                                       .isAfter(DateTime.now())
                                   ?
-                                  //            DateTime.parse(
-                                  //            '2024-${appointment['meseN']}-${appointment['dayN']} ${appointment['hour']}:00:00')
-                                  //      .isBefore(DateTime.now()) ?
                                   sport == 'football'
                                       ? Get.to(
                                           () => FootballCreateResultsPage(
@@ -292,9 +286,6 @@ Widget AppointmentCreateCard(
                                           '2024-${appointment['meseN']}-${appointment['dayN']} $a_hour:$minutes:00')
                                       .isBefore(DateTime.now())
                                   ?
-                                  //            DateTime.parse(
-                                  //            '2024-${appointment['meseN']}-${appointment['dayN']} ${appointment['hour']}:00:00')
-                                  //      .isBefore(DateTime.now()) ?
                                   sport == 'football'
                                       ? GoRouter.of(context).go('/football-results', extra: {
                                         'appointment': appointment,
@@ -325,27 +316,9 @@ Widget AppointmentCreateCard(
                                           Colors.redAccent.withOpacity(0.6),
                                       colorText: Colors.black);
 
-                              //           :  Get.snackbar('', "",
-                              //             snackPosition: SnackPosition.TOP,
-                              //           titleText: Text(
-                              //           'Partita non ancora giocata',
-                              //         style: TextStyle(
-                              //         color: Colors.black,
-                              //       fontWeight: FontWeight.w800,
-                              //     letterSpacing: 1,
-                              //   fontSize: w > 385 ? 18 : 15,
-                              //     ),
-                              //   ),
-                              //        duration: const Duration(seconds: 4),
-                              //      backgroundColor:
-                              //        Colors.redAccent.withOpacity(0.6),
-                              //     colorText: Colors.black);
                             },
                           ),
                           SizedBox(height: h * 0.01),
-                          //     if (DateTime.parse(
-                          //           '2024-${appointment['meseN']}-${appointment['dayN']} $b_hour:$b_minutes:00')
-                          //     .isAfter(DateTime.now()))
                           FutureBuilder<DocumentSnapshot>(
                               future: FirebaseFirestore.instance
                                   .collection('User')
@@ -360,7 +333,6 @@ Widget AppointmentCreateCard(
                                       .data() as Map<String, dynamic>;
 
                                   return
-                                      //if(DateTime.parse('2024-${appointment['meseN']}-${appointment['day']} $b_hour:$b_minutes:00').isAfter(DateTime.now()))
                                       AnimatedButton(
                                     isFixedHeight: false,
                                     height: h > 900 ? h * 0.035 : h * 0.04,

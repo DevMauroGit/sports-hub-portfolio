@@ -13,15 +13,11 @@ import 'package:sports_hub_ios/utils/constants.dart';
 
 Widget AppointmentCard(
     {required Map appointment, h, w, context, profile, sport}) {
-  // ignore: non_constant_identifier_names, unused_local_variable
   String b_hour = '';
   String a_hour = '';
-  // ignore: non_constant_identifier_names, unused_local_variable
   String b_minutes = '30';
   String minutes = '00';
 
-  //String c_hour = '';
-  //String c_minutes = '';
 
   List calendar1 = [];
   List calendar2 = [];
@@ -29,7 +25,6 @@ Widget AppointmentCard(
   String uid = FirebaseAuth.instance.currentUser!.uid.toString();
 
   if (appointment['minutes'] == 0) {
-    //print('00 00 00');
     for (int i = 0; i < 24; i++) {
       if (appointment['hour'] == '$i') {
         a_hour = '${i + 1}';
@@ -44,13 +39,9 @@ Widget AppointmentCard(
         a_hour = '11';
       }
     }
-    //print(a_hour);
-    //print(b_minutes);
-    //print(b_hour);
   }
 
   if (appointment['minutes'] == 30) {
-    //print('30 30 30');
     minutes = '30';
     b_minutes = '00';
     for (int i = 0; i < 24; i++) {
@@ -63,13 +54,9 @@ Widget AppointmentCard(
         a_hour = '10';
       }
     }
-    //print(a_hour);
-    //print(b_minutes);
-    //print(b_hour);
   }
 
   String day = appointment['day'].toString();
-  //print(next_hour);
 
   if (appointment['caricato'] == false) {
     return Column(children: [
@@ -98,7 +85,6 @@ Widget AppointmentCard(
                     ),
                     SizedBox(height: h * 0.01),
                     Container(
-                      //margin: EdgeInsets.symmetric(horizontal: h * 0.02),
                       child: Column(
                         children: [
                           Row(
@@ -244,9 +230,6 @@ Widget AppointmentCard(
                                           '2024-${appointment['meseN']}-${appointment['dayN']} $a_hour:$minutes:00')
                                       .isBefore(DateTime.now())
                                   ?
-                                  //            DateTime.parse(
-                                  //            '2024-${appointment['meseN']}-${appointment['dayN']} ${appointment['hour']}:00:00')
-                                  //      .isBefore(DateTime.now()) ?
                                   sport == 'football'
                                       ? Get.to(
                                           () => FootballResultsPage(
@@ -279,27 +262,9 @@ Widget AppointmentCard(
                                           Colors.redAccent.withOpacity(0.6),
                                       colorText: Colors.black);
 
-                              //           :  Get.snackbar('', "",
-                              //             snackPosition: SnackPosition.TOP,
-                              //           titleText: Text(
-                              //           'Partita non ancora giocata',
-                              //         style: TextStyle(
-                              //         color: Colors.black,
-                              //       fontWeight: FontWeight.w800,
-                              //     letterSpacing: 1,
-                              //   fontSize: w > 385 ? 18 : 15,
-                              //     ),
-                              //   ),
-                              //        duration: const Duration(seconds: 4),
-                              //      backgroundColor:
-                              //        Colors.redAccent.withOpacity(0.6),
-                              //     colorText: Colors.black);
                             },
                           ),
                           SizedBox(height: h * 0.01),
-                          //     if (DateTime.parse(
-                          //           '2024-${appointment['meseN']}-${appointment['dayN']} $b_hour:$b_minutes:00')
-                          //     .isAfter(DateTime.now()))
                           FutureBuilder<DocumentSnapshot>(
                               future: FirebaseFirestore.instance
                                   .collection('User')
@@ -313,7 +278,6 @@ Widget AppointmentCard(
                                       .data() as Map<String, dynamic>;
 
                                   return
-                                      //if(DateTime.parse('2024-${appointment['meseN']}-${appointment['day']} $b_hour:$b_minutes:00').isAfter(DateTime.now()))
                                       AnimatedButton(
                                     isFixedHeight: false,
                                     height: h > 900 ? h * 0.035 : h * 0.04,
@@ -728,7 +692,6 @@ Future<void> updateToServer(
           }
         }
       } else if (hourInt == firstHour + 1) {
-        //if((list2[hourInt - (firstHour + 2)] == '' || list2[hourInt - (firstHour +2)] == null) && (list1[hourInt - (firstHour + 1)] == '' || list1[hourInt - (firstHour +1)] == null)){
         FirebaseDatabase.instanceFor(app: Firebase.app(), databaseURL: dbURL)
             .ref()
             .child('Calendario')
@@ -739,7 +702,6 @@ Future<void> updateToServer(
             .update({
           'half_hour': true,
         });
-        //if (list2[hourInt - (firstHour +2)] == '' || list2[hourInt - (firstHour +2)] == null) {
         FirebaseDatabase.instanceFor(app: Firebase.app(), databaseURL: dbURL)
             .ref()
             .child('Calendario')

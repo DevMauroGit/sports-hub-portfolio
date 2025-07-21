@@ -11,22 +11,15 @@ import 'package:sports_hub_ios/widgets/register_memo.dart';
 
 Widget AvailableGameCard(
     {required Map appointment, h, w, context, sport, required bool ospite}) {
-  // ignore: non_constant_identifier_names, unused_local_variable
   String b_hour = '';
-  // ignore: unused_local_variable
   String a_hour = '';
-  // ignore: non_constant_identifier_names, unused_local_variable
   String b_minutes = '30';
-  // ignore: unused_local_variable
   String minutes = '00';
 
   List calendar1 = [];
   List calendar2 = [];
 
-  // ignore: unused_local_variable
-
   if (appointment['minutes'] == 0) {
-    //print('00 00 00');
     for (int i = 0; i < 21; i++) {
       if (appointment['hour'] == '$i') {
         a_hour = '${i + 1}';
@@ -41,13 +34,9 @@ Widget AvailableGameCard(
         a_hour = '11';
       }
     }
-    //print(a_hour);
-    //print(b_minutes);
-    //print(b_hour);
   }
 
   if (appointment['minutes'] == 30) {
-    //print('30 30 30');
     minutes = '30';
     b_minutes = '00';
     for (int i = 0; i < 21; i++) {
@@ -60,13 +49,9 @@ Widget AvailableGameCard(
         a_hour = '10';
       }
     }
-    //print(a_hour);
-    //print(b_minutes);
-    //print(b_hour);
   }
 
   String day = appointment['day'].toString();
-  //print(next_hour);
 
   if (appointment['caricato'] == false &&
       DateTime.parse(
@@ -111,7 +96,6 @@ Widget AvailableGameCard(
                   ),
                   SizedBox(height: h * 0.01),
                   Container(
-                    //margin: EdgeInsets.symmetric(horizontal: h * 0.02),
                     child: Column(
                       children: [
                         Row(
@@ -436,7 +420,6 @@ Future<void> updateToServer(
           }
         }
       } else if (hourInt == firstHour + 1) {
-        //if((list2[hourInt - (firstHour + 2)] == '' || list2[hourInt - (firstHour +2)] == null) && (list1[hourInt - (firstHour + 1)] == '' || list1[hourInt - (firstHour +1)] == null)){
         FirebaseDatabase.instanceFor(app: Firebase.app(), databaseURL: dbURL)
             .ref()
             .child('Calendario')
@@ -447,7 +430,6 @@ Future<void> updateToServer(
             .update({
           'half_hour': true,
         });
-        //if (list2[hourInt - (firstHour +2)] == '' || list2[hourInt - (firstHour +2)] == null) {
         FirebaseDatabase.instanceFor(app: Firebase.app(), databaseURL: dbURL)
             .ref()
             .child('Calendario')

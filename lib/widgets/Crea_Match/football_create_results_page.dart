@@ -29,30 +29,32 @@ class _FootballCreateResultsPageState extends State<FootballCreateResultsPage> {
   Widget build(BuildContext context) {
     List list1 = [];
 
-    final double h = MediaQuery.of(context).size.height;
-    final double w = MediaQuery.of(context).size.width;
+    final double h = MediaQuery.of(context).size.height; // Screen height
+    final double w = MediaQuery.of(context).size.width;  // Screen width
     String email = FirebaseAuth.instance.currentUser!.email.toString();
 
-    List allTeammate = [];
-    List allTeammateData = [];
+    List allTeammate = [];       // List to store teammates (friends)
+    List allTeammateData = [];   // List to store teammates' detailed data
 
-    Map appointmentData = {};
+    Map appointmentData = {};    // Map to hold appointment details
 
-    //List list1 = [];
-
+    // Check if total player count for team 1 is defined
     if (widget.appointment['playerCount1Tot'] != null) {
+      // Collect players from team 1 who are not guests
       for (int i = 0; i < widget.appointment['playerCount1Tot']; i++) {
         if (widget.appointment['team1_P${i + 1}'] != 'ospite') {
           list1.add(widget.appointment['team1_P${i + 1}']);
         }
       }
 
+      // Collect players from team 2 who are not guests
       for (int i = 0; i < widget.appointment['playerCount2Tot']; i++) {
         if (widget.appointment['team2_P${i + 1}'] != 'ospite') {
           list1.add(widget.appointment['team2_P${i + 1}']);
         }
       }
 
+      // Listen for realtime updates from Firebase Realtime Database
       FirebaseDatabase.instanceFor(
               app: Firebase.app(), databaseURL: dbPrenotazioniURL)
           .ref(
@@ -63,18 +65,21 @@ class _FootballCreateResultsPageState extends State<FootballCreateResultsPage> {
 
         list1.clear();
 
+        // Refresh list1 with updated players from team 1
         for (int i = 0; i < widget.appointment['playerCount1Tot']; i++) {
           if (widget.appointment['team1_P${i + 1}'] != 'ospite') {
             list1.add(widget.appointment['team1_P${i + 1}']);
           }
         }
 
+        // Refresh list1 with updated players from team 2
         for (int i = 0; i < widget.appointment['playerCount2Tot']; i++) {
           if (widget.appointment['team2_P${i + 1}'] != 'ospite') {
             list1.add(widget.appointment['team2_P${i + 1}']);
           }
         }
 
+        // Update appointment data with latest from database
         appointmentData.assignAll(data);
       });
 
@@ -91,30 +96,31 @@ class _FootballCreateResultsPageState extends State<FootballCreateResultsPage> {
                         .collection('User')
                         .doc(email)
                         .collection('Friends')
-                        .where('isRequested', isEqualTo: 'false')
+                        .where('isRequested', isEqualTo: 'false') // Only accepted friends
                         .get(),
                     builder: (context, snapshot) {
                       if (snapshot.hasError) {
-                        print('errore caricamento dati');
+                        print('Error loading data');
                       } else if (snapshot.connectionState ==
                           ConnectionState.waiting) {
                         return Container(
                           margin: const EdgeInsets.all(kDefaultPadding),
                           child: const Center(
-                            child: CircularProgressIndicator(),
+                            child: CircularProgressIndicator(), // Show loading spinner
                           ),
                         );
                       } else if (snapshot.hasData) {
+                        // Convert query docs into FriendModel instances
                         final friendList = snapshot.data!.docs
                             .map((friends) => FriendModel.fromSnapshot(friends))
                             .toList();
                         allTeammate.assignAll(friendList);
-                        //print('carousel has data');
                       }
 
                       return SingleChildScrollView(
                           child: Column(children: [
                         SizedBox(height: h * 0.02),
+                        // For each teammate, fetch their detailed data asynchronously
                         for (int i = 0; i < allTeammate.length; i++)
                           if (allTeammate.isNotEmpty)
                             FutureBuilder(
@@ -125,24 +131,21 @@ class _FootballCreateResultsPageState extends State<FootballCreateResultsPage> {
                                     .get(),
                                 builder: (context, snapshot) {
                                   if (snapshot.hasError) {
-                                    print('errore caricamento dati');
+                                    print('Error loading data');
                                   } else if (snapshot.connectionState ==
                                       ConnectionState.waiting) {
-                                    return Container();
+                                    return Container(); // Show nothing while loading
                                   } else if (snapshot.hasData) {
+                                    // Retrieve friend detailed data and add to list
                                     final friend =
                                         snapshot.data!.docs.elementAt(0).data();
 
                                     allTeammateData.add(friend);
-
-                                    //print('carousel has data');
-                                    //print('allFriendsData: ${allTeammateData}');
-                                    //print('allFriends: ${allTeammate}s');
                                   }
 
-                                  return Container();
+                                  return Container(); // Placeholder
                                 }),
-                        //widget.appointment['sport'] == 'football' ?
+                        // Show football results screen with all data passed in
                         FootballCreateResultsScreen(
                           allTeammate: allTeammate,
                           allTeammateData: allTeammateData,
@@ -151,20 +154,11 @@ class _FootballCreateResultsPageState extends State<FootballCreateResultsPage> {
                           appointment: appointmentData,
                           list1: list1,
                         )
-
-                        //: TennisResultsScreen(
-                        //  allTeammate: allTeammate,
-                        //  allTeammateData: allTeammateData,
-                        //  h: h,
-                        //  w: w,
-                        //  appointment: appointmentData)
                       ]));
                     }),
-                //if(showFriends==true)
-
-                //SizedBox(height: h*0.05),
               )));
     } else {
+      // If player count info is missing, fetch appointment data from Firebase Realtime Database
       Map appointmentData = {};
       String uid = FirebaseAuth.instance.currentUser!.uid.toString();
 
@@ -175,11 +169,10 @@ class _FootballCreateResultsPageState extends State<FootballCreateResultsPage> {
           .onValue
           .listen((DatabaseEvent event) {
         final data = event.snapshot.value as Map;
-        //print(data);
-
         appointmentData.assignAll(data);
       });
 
+      // After a short delay, check if data is empty and navigate accordingly
       Future.delayed(const Duration(milliseconds: 500), () {
         appointmentData.isEmpty
             ? appointmentData = widget.appointment
@@ -191,6 +184,7 @@ class _FootballCreateResultsPageState extends State<FootballCreateResultsPage> {
                     FootballCreateResultsPage(appointment: appointmentData)));
       });
     }
+    // Show loading screen if no data is ready yet
     return const LoadingScreen();
   }
 }

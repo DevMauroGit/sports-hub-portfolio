@@ -57,10 +57,7 @@ class SearchUserCard extends StatelessWidget {
               children: [
                 Container(
                   margin: const EdgeInsets.only(
-                    //right: kDefaultPadding,
-                    //left: kDefaultPadding,
                     top: kDefaultPadding,
-                    //bottom: kDefaultPadding * 15,
                   ),
                   padding: const EdgeInsets.all(0),
                   decoration: const BoxDecoration(
@@ -95,7 +92,6 @@ class SearchUserCard extends StatelessWidget {
                       alignment: Alignment.center,
                       child: const CircularProgressIndicator(),
                     ),
-                    //errorWidget: (context, url, error) => Image.asset("assets/images/arena.jpg")
                   ),
                 ),
                 Align(
@@ -104,12 +100,6 @@ class SearchUserCard extends StatelessWidget {
                       Container(
                           width: size.width * 0.8,
                           height: size.height * 0.08,
-                          margin: const EdgeInsets.only(
-                              //left: kDefaultPadding,
-                              //right: kDefaultPadding,
-                              // top: kDefaultPadding,
-                              //bottom: kDefaultPadding * 15,
-                              ),
                           padding: const EdgeInsets.only(
                               right: 15, left: 15, top: 15),
                           decoration: const BoxDecoration(

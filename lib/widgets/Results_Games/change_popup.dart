@@ -139,7 +139,6 @@ class PopUpChange1State extends State<PopUpChange1> {
                               widget.sport,
                               widget.appointment['crea_match']);
 
-                          //Future.delayed(const Duration(milliseconds: 355));
 
                           FirebaseDatabase.instanceFor(
                                   app: Firebase.app(),
@@ -149,18 +148,15 @@ class PopUpChange1State extends State<PopUpChange1> {
                               .onValue
                               .listen((DatabaseEvent event) {
                             final data = event.snapshot.value as Map;
-                            //print(data);
 
                             appointmentData.assignAll(data);
                           });
-                          //Future.delayed(const Duration(milliseconds: 355));
 
                           if (appointmentData.isEmpty) {
                             appointmentData.assignAll(widget.appointment);
                             print('empty');
                           }
 
-                          //print(appointmentData);
                           Future.delayed(const Duration(milliseconds: 500), () {
                             appointmentData.isEmpty
                                 ? appointmentData = widget.appointment
@@ -345,7 +341,6 @@ class PopUpChangeState extends State<PopUpChange2> {
                               widget.sport,
                               widget.appointment['crea_match']);
 
-                          //Future.delayed(const Duration(milliseconds: 355));
 
                           FirebaseDatabase.instanceFor(
                                   app: Firebase.app(),
@@ -355,7 +350,6 @@ class PopUpChangeState extends State<PopUpChange2> {
                               .onValue
                               .listen((DatabaseEvent event) async {
                             final data = event.snapshot.value as Map;
-                            //print(data);
 
                             appointmentData.assignAll(data);
                           });
@@ -365,7 +359,6 @@ class PopUpChangeState extends State<PopUpChange2> {
                             print('empty');
                           }
 
-                          //print(appointmentData);
                           Future.delayed(const Duration(milliseconds: 500), () {
                             appointmentData.isEmpty
                                 ? appointmentData = widget.appointment
@@ -385,7 +378,6 @@ class PopUpChangeState extends State<PopUpChange2> {
                                         builder: (context) => TennisResultsPage(
                                             appointment: appointmentData)));
                           });
-                          //Future.delayed(const Duration(milliseconds: 355));
                         },
                         child: Center(
                           child: DefaultTextStyle(
@@ -482,7 +474,6 @@ class PopUpCreateChange1State extends State<PopUpCreateChange1> {
                       padding: EdgeInsets.symmetric(
                         vertical: widget.h * 0.015,
                       ),
-                      //margin: EdgeInsets.only(top: h*0.02),
                       decoration: const BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(10)),
                         color: kBackgroundColor2,
@@ -549,18 +540,14 @@ class PopUpCreateChange1State extends State<PopUpCreateChange1> {
                               .onValue
                               .listen((DatabaseEvent event) {
                             final data = event.snapshot.value as Map;
-                            //print(data);
 
                             appointmentData.assignAll(data);
                           });
-                          //Future.delayed(const Duration(milliseconds: 200));
 
                           if (appointmentData.isEmpty) {
                             appointmentData.assignAll(widget.appointment);
-                            //print(widget.appointment);
                           }
 
-                          //print(appointmentData);
                           Future.delayed(const Duration(milliseconds: 500), () {
                             appointmentData.isEmpty
                                 ? appointmentData = widget.appointment
@@ -677,7 +664,6 @@ class PopUpCreateChangeState extends State<PopUpCreateChange2> {
                       padding: EdgeInsets.symmetric(
                         vertical: widget.h * 0.015,
                       ),
-                      //margin: EdgeInsets.only(top: h*0.02),
                       decoration: const BoxDecoration(
                         borderRadius: BorderRadius.all(Radius.circular(10)),
                         color: kBackgroundColor2,
@@ -744,19 +730,16 @@ class PopUpCreateChangeState extends State<PopUpCreateChange2> {
                               .onValue
                               .listen((DatabaseEvent event) async {
                             final data = event.snapshot.value as Map;
-                            //print(data);
 
                             appointmentData.assignAll(data);
                           });
 
-                          //Future.delayed(const Duration(milliseconds: 355));
 
                           if (appointmentData.isEmpty) {
                             appointmentData.assignAll(widget.appointment);
                             print('if');
                           }
 
-                          //print(appointmentData);
                           Future.delayed(const Duration(milliseconds: 500), () {
                             appointmentData.isEmpty
                                 ? appointmentData = widget.appointment
@@ -831,7 +814,6 @@ void sendOspiteToServer1(
       .child(address)
       .child('$month-$day-$time')
       .update({
-    //'team1_P1': selectedUser,
     'team1_P$p': selectedUser,
     'playerCount1': playerCount1
   });
@@ -889,7 +871,6 @@ void sendOspiteToServer1Create(
       .child('Crea_Match')
       .child('$month-$day-$time')
       .update({
-    //'team1_P1': selectedUser,
     'team1_P$p': selectedUser,
     'playerCount1': playerCount1
   });
@@ -903,7 +884,6 @@ void sendOspiteToServer1Create(
       .child(sport)
       .child('$month-$day-$time')
       .update({
-    //'team1_P1': selectedUser,
     'team1_P$p': selectedUser,
     'playerCount1': playerCount1
   });
@@ -931,7 +911,6 @@ void sendOspiteToServer2Create(
       .child('Crea_Match')
       .child('$month-$day-$time')
       .update({
-    //'team1_P1': selectedUser,
     'team2_P$p': selectedUser,
     'playerCount2': playerCount2
   });
@@ -945,7 +924,6 @@ void sendOspiteToServer2Create(
       .child(sport)
       .child('$month-$day-$time')
       .update({
-    //'team1_P1': selectedUser,
     'team2_P$p': selectedUser,
     'playerCount2': playerCount2
   });

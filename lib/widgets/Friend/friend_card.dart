@@ -95,10 +95,6 @@ class FriendCard extends StatelessWidget {
                                     ? size.height * 0.19
                                     : size.height * 0.24,
                                 margin: const EdgeInsets.only(
-                                    //left: kDefaultPadding,
-                                    //right: kDefaultPadding,
-                                    // top: kDefaultPadding,
-                                    //bottom: kDefaultPadding * 15,
                                     ),
                                 padding: const EdgeInsets.only(
                                     right: 0, left: 0, top: 15),
@@ -125,7 +121,6 @@ class FriendCard extends StatelessWidget {
                                       : TennisStatsWidgetCard(profile: friends),
 
                                   SizedBox(height: size.height * 0.01),
-                                  //if(friends['isRequested'] == 'false')
                                   AnimatedButton(
                                     isFixedHeight: false,
                                     height: size.height > 700
@@ -206,21 +201,6 @@ class FriendCard extends StatelessWidget {
                                     },
                                   ),
 
-                                  //                            GestureDetector(
-                                  //                              onTap: () async {
-                                  //                                await FirebaseFirestore.instance.collection("User").doc(email).collection('Friends').doc(friends['email']).
-                                  //                                delete();
-                                  //                                //update({'isRequested': 'refused'});
-                                  //                  Navigator.push(context, MaterialPageRoute(builder: (context)=>
-                                  //                  FriendsPage(docIds: email, h: h, w: w, future: FirebaseFirestore.instance
-                                  //    .collection('User')
-                                  //    .doc(email)
-                                  //    .collection('Friends')
-                                  //    .where('isRequested', isEqualTo: 'false')
-                                  //    .get(),)));
-                                  //                              },
-                                  //                              child: Text('Rimuovi amico', style: TextStyle(color: Colors.white, fontSize: 13),),
-                                  //                            )
                                 ])),
                           ])
                           //)
@@ -247,7 +227,6 @@ class FriendCard extends StatelessWidget {
 class FootballStatsWidgetCard extends StatelessWidget {
   const FootballStatsWidgetCard({super.key, required this.profile});
 
-  //final UserModel profile;
   final Map profile;
 
   @override
@@ -267,13 +246,11 @@ class FootballStatsWidgetCard extends StatelessWidget {
               value: profile['games'],
               w: size.width,
               h: size.height),
-          // buildDivider(),
           buildButton(
               text: 'Goal ',
               value: profile['goals'],
               w: size.width,
               h: size.height),
-          //buildDivider(),
           buildButton(
               text: ' Win ',
               value: profile['win'],
@@ -300,8 +277,6 @@ class FootballStatsWidgetCard extends StatelessWidget {
         padding: const EdgeInsets.symmetric(
           vertical: 4,
         ),
-        //onPressed: (){},
-        //materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
@@ -337,7 +312,6 @@ class FootballStatsWidgetCard extends StatelessWidget {
 class TennisStatsWidgetCard extends StatelessWidget {
   const TennisStatsWidgetCard({super.key, required this.profile});
 
-  //final UserModel profile;
   final Map profile;
 
   @override
@@ -357,13 +331,11 @@ class TennisStatsWidgetCard extends StatelessWidget {
               value: profile['games_tennis'],
               w: size.width,
               h: size.height),
-          // buildDivider(),
           buildButton(
               text: ' Set ',
               value: profile['set_vinti'],
               w: size.width,
               h: size.height),
-          //buildDivider(),
           buildButton(
               text: ' Win ',
               value: profile['win_tennis'],
@@ -390,8 +362,6 @@ class TennisStatsWidgetCard extends StatelessWidget {
         padding: const EdgeInsets.symmetric(
           vertical: 4,
         ),
-        //onPressed: (){},
-        //materialTapTargetSize: MaterialTapTargetSize.shrinkWrap,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
@@ -468,10 +438,7 @@ class _FootballCandidateCardState extends State<FootballCandidateCard> {
                 children: [
                   Container(
                     margin: const EdgeInsets.only(
-                      //right: kDefaultPadding,
-                      //left: kDefaultPadding,
                       top: kDefaultPadding,
-                      //bottom: kDefaultPadding * 15,
                     ),
                     padding: const EdgeInsets.all(0),
                     decoration: const BoxDecoration(
@@ -519,10 +486,6 @@ class _FootballCandidateCardState extends State<FootballCandidateCard> {
                               ? size.height * 0.22
                               : size.height * 0.24,
                           margin: const EdgeInsets.only(
-                              //left: kDefaultPadding,
-                              //right: kDefaultPadding,
-                              // top: kDefaultPadding,
-                              //bottom: kDefaultPadding * 15,
                               ),
                           padding:
                               const EdgeInsets.only(right: 0, left: 0, top: 15),

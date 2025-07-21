@@ -67,7 +67,6 @@ class _GamesCreateWidgetState extends State<GamesCreateWidget> {
       future: gameController.getAllCreateGames(),
       builder: (context, snapshot) {
         if (snapshot.hasError) {
-          //print('errore caricamento dati');
         } else if (snapshot.connectionState == ConnectionState.waiting) {
           return Container(
             margin: const EdgeInsets.all(kDefaultPadding),
@@ -75,7 +74,7 @@ class _GamesCreateWidgetState extends State<GamesCreateWidget> {
               child: CircularProgressIndicator(),
             ),
           );
-        } //print('games: ${userController.allGames.first}');
+        } 
         return GameCard(
           game: gameController.allGames.first,
           appointment: widget.appointment,

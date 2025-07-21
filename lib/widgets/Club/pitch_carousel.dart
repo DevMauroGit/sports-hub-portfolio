@@ -5,6 +5,7 @@ import 'package:sports_hub_ios/widgets/Club/pitch_card.dart';
 import 'package:sports_hub_ios/widgets/Club/pitch_card_loading.dart';
 
 class PitchCarousel extends StatefulWidget {
+  // Constructor with required parameters for pitches, clubs, selected club info, guest flag, height and width
   const PitchCarousel({
     super.key,
     required this.pitch,
@@ -15,12 +16,12 @@ class PitchCarousel extends StatefulWidget {
     required this.w,
   });
 
-  final PitchController pitch;
-  final List clubs;
-  final Map club;
-  final bool ospite;
-  final double h;
-  final double w;
+  final PitchController pitch; // Controller for pitch data and logic
+  final List clubs;            // List of club pitches to display
+  final Map club;              // Currently selected club information
+  final bool ospite;           // Flag indicating if the user is a guest
+  final double h;              // Available height for layout
+  final double w;              // Available width for layout
 
   @override
   State<PitchCarousel> createState() => _PitchCarouselState();
@@ -29,49 +30,49 @@ class PitchCarousel extends StatefulWidget {
 class _PitchCarouselState extends State<PitchCarousel> {
   @override
   Widget build(BuildContext context) {
+    // Use StreamBuilder to listen to pitch data updates (currently stream is null)
     return StreamBuilder(
+      stream: null, // Placeholder: replace with actual Firestore stream or data source
       builder: (BuildContext context, AsyncSnapshot<QuerySnapshot> snapshot) {
+        // Handle error case by printing error message
         if (snapshot.hasError) {
-          print('errore caricamento dati');
-        } else if (snapshot.connectionState == ConnectionState.waiting) {
+          print('Error loading data');
+        } 
+        // While waiting for data, show loading placeholder widgets with horizontal scrolling
+        else if (snapshot.connectionState == ConnectionState.waiting) {
           return Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 0),
-              child: AspectRatio(
-                aspectRatio: 0.85,
-                child: ListView.builder(
-                    padding: const EdgeInsets.symmetric(horizontal: 15),
-                    scrollDirection: Axis.horizontal,
-                    itemCount: 3,
-                    itemBuilder: (
-                      context,
-                      index,
-                    ) =>
-                        const PitchCardLoading()),
-              ));
-        }
-        return Padding(
             padding: const EdgeInsets.symmetric(horizontal: 0),
             child: AspectRatio(
-              aspectRatio: 0.85,
+              aspectRatio: 0.85, // Maintain consistent aspect ratio for the carousel
               child: ListView.builder(
-                padding: EdgeInsets.symmetric(horizontal: 15),
+                padding: const EdgeInsets.symmetric(horizontal: 15),
                 scrollDirection: Axis.horizontal,
-                itemCount: widget.clubs.length,
-                itemBuilder: (
-                  context,
-                  index,
-                ) =>
-                    PitchCard(
-                  pitch: widget.clubs[index],
-                  club: widget.club,
-                  ospite: widget.ospite,
-                  hM: widget.h,
-                  wM: widget.w,
-                ),
+                itemCount: 3, // Show 3 loading placeholders
+                itemBuilder: (context, index) => const PitchCardLoading(),
               ),
-            ));
+            ),
+          );
+        }
+        // Once data is available, build a horizontal scrollable list of PitchCards for each club pitch
+        return Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 0),
+          child: AspectRatio(
+            aspectRatio: 0.85,
+            child: ListView.builder(
+              padding: EdgeInsets.symmetric(horizontal: 15),
+              scrollDirection: Axis.horizontal,
+              itemCount: widget.clubs.length,
+              itemBuilder: (context, index) => PitchCard(
+                pitch: widget.clubs[index],   // Pass pitch data to card
+                club: widget.club,             // Pass selected club info
+                ospite: widget.ospite,         // Pass guest flag
+                hM: widget.h,                  // Pass height measurement
+                wM: widget.w,                  // Pass width measurement
+              ),
+            ),
+          ),
+        );
       },
-      stream: null,
     );
   }
 }

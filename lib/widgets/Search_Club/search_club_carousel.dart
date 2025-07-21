@@ -41,11 +41,6 @@ class _SearchClubCarouselState extends State<SearchClubCarousel> {
                     index,
                   ) =>
                       Container()
-                  //SearchClubCard(
-                  //clubs: widget.Clubs[index],
-
-                  //),
-
                   ),
             ));
       },

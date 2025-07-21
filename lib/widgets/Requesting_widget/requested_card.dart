@@ -107,13 +107,6 @@ class _RequestedCardState extends State<RequestedCard> {
                                       avviso: false,
                                       sport: 'football',
                                     )
-                                //               FriendsPage(docIds: email, h: h, w: w, future: FirebaseFirestore.instance
-                                // .collection('User')
-                                // .doc(email)
-                                // .collection('Friends')
-                                // .where('isRequested', isEqualTo: 'false')
-                                // .get(),
-                                //)
                                 ));
                       },
                       child: Container(
@@ -164,13 +157,6 @@ class _RequestedCardState extends State<RequestedCard> {
                                       avviso: false,
                                       sport: 'football',
                                     )
-                                //               FriendsPage(docIds: email, h: h, w: w, future: FirebaseFirestore.instance
-                                // .collection('User')
-                                // .doc(email)
-                                // .collection('Friends')
-                                // .where('isRequested', isEqualTo: 'false')
-                                // .get(),
-                                //)
                                 ));
                       },
                       child: Container(

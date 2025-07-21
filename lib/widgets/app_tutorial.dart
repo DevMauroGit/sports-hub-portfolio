@@ -38,7 +38,6 @@ class AppTutorialState extends State<AppTutorial> {
                     ),
                     height: widget.h * 0.042,
                     width: widget.w * 0.6,
-                    //margin: EdgeInsets.only(top: h*0.02),
                     decoration: const BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
                       color: kBackgroundColor2,
@@ -67,7 +66,6 @@ class AppTutorialState extends State<AppTutorial> {
                         horizontal: 20, vertical: 10),
                     height: widget.h * 0.53,
                     width: widget.w * 0.6,
-                    //margin: EdgeInsets.only(top: h*0.02),
                     decoration: const BoxDecoration(
                       borderRadius: BorderRadius.all(Radius.circular(10)),
                       color: kBackgroundColor2,

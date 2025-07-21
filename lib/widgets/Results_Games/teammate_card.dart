@@ -90,7 +90,6 @@ class _TeammateCard1State extends State<TeammateCard1> {
                       widget.teammate['email'],
                       widget.sport,
                       widget.appointment['crea_match']);
-                  //Future.delayed(const Duration(milliseconds: 355));
                 }
                 FirebaseDatabase.instanceFor(
                         app: Firebase.app(), databaseURL: dbPrenotazioniURL)
@@ -99,15 +98,12 @@ class _TeammateCard1State extends State<TeammateCard1> {
                     .onValue
                     .listen((DatabaseEvent event) {
                   final data = event.snapshot.value as Map;
-                  //print(data);
+                  
 
                   appointmentData.assignAll(data);
-                }); //setState(() {
+                }); 
                 counter1 = 0;
 
-                //});
-
-                //Future.delayed(const Duration(milliseconds: 355));
 
                 if (appointmentData.isEmpty) {
                   appointmentData.assignAll(widget.appointment);
@@ -115,7 +111,6 @@ class _TeammateCard1State extends State<TeammateCard1> {
                   print(appointmentData);
                 }
 
-                //print(appointmentData);
                 Future.delayed(const Duration(milliseconds: 500), () {
                   appointmentData.isEmpty
                       ? appointmentData = widget.appointment
@@ -266,12 +261,10 @@ class _TeammateCardState extends State<TeammateCard2> {
                     .onValue
                     .listen((DatabaseEvent event) {
                   final data = event.snapshot.value as Map;
-                  //print(data);
 
                   appointmentData.assignAll(data);
                 });
 
-                //Future.delayed(const Duration(milliseconds: 355));
 
                 sendToServer2(
                     uid,
@@ -316,7 +309,6 @@ class _TeammateCardState extends State<TeammateCard2> {
                     .onValue
                     .listen((DatabaseEvent event) {
                   final data = event.snapshot.value as Map;
-                  //print(data);
 
                   appointmentData.assignAll(data);
                 });
@@ -325,14 +317,11 @@ class _TeammateCardState extends State<TeammateCard2> {
                 counter1 = 0;
               });
 
-              //Future.delayed(const Duration(milliseconds: 355));
 
               if (appointmentData.isEmpty) {
                 appointmentData.assignAll(widget.appointment);
-                //print(widget.appointment);
               }
 
-              //print(appointmentData);
               Future.delayed(const Duration(milliseconds: 500), () {
                 appointmentData.isEmpty
                     ? appointmentData = widget.appointment
@@ -395,7 +384,6 @@ class _TeammateCardState extends State<TeammateCard2> {
                             alignment: Alignment.center,
                             child: const CircularProgressIndicator(),
                           ),
-                          //errorWidget: (context, url, error) => Image.asset("assets/images/arena.jpg")
                         ),
                       ),
                     ),
@@ -476,7 +464,6 @@ class _TeammateCreateCard1State extends State<TeammateCreateCard1> {
                       .onValue
                       .listen((DatabaseEvent event) {
                     final data = event.snapshot.value as Map;
-                    //print(data);
 
                     appointmentData.assignAll(data);
                   });
@@ -516,7 +503,6 @@ class _TeammateCreateCard1State extends State<TeammateCreateCard1> {
                       widget.teammate['email'],
                       widget.sport,
                       widget.appointment['city']);
-                  //Future.delayed(const Duration(milliseconds: 355));
 
                   FirebaseDatabase.instanceFor(
                           app: Firebase.app(), databaseURL: dbPrenotazioniURL)
@@ -525,24 +511,19 @@ class _TeammateCreateCard1State extends State<TeammateCreateCard1> {
                       .onValue
                       .listen((DatabaseEvent event) {
                     final data = event.snapshot.value as Map;
-                    //print(data);
 
                     appointmentData.assignAll(data);
                   });
                 }
-                //setState(() {
                 counter1 = 0;
 
-                //});
 
-                //Future.delayed(const Duration(milliseconds: 355));
 
                 if (appointmentData.isEmpty) {
                   appointmentData.assignAll(widget.appointment);
                   print('if');
                 }
 
-                //print(appointmentData);
                 Future.delayed(const Duration(milliseconds: 500), () {
                   appointmentData.isEmpty
                       ? appointmentData = widget.appointment
@@ -691,7 +672,6 @@ class _TeammateCreateCardState extends State<TeammateCreateCard2> {
                   appointmentData.assignAll(data);
                 });
 
-                //Future.delayed(const Duration(milliseconds: 355));
 
                 sendToServer2Create(
                     uid,
@@ -744,14 +724,11 @@ class _TeammateCreateCardState extends State<TeammateCreateCard2> {
                 counter1 = 0;
               });
 
-              //Future.delayed(const Duration(milliseconds: 355));
 
               if (appointmentData.isEmpty) {
                 appointmentData.assignAll(widget.appointment);
-                //print(widget.appointment);
               }
 
-              //print(appointmentData);
               Future.delayed(const Duration(milliseconds: 500), () {
                 appointmentData.isEmpty
                     ? appointmentData = widget.appointment
@@ -812,7 +789,6 @@ class _TeammateCreateCardState extends State<TeammateCreateCard2> {
                             alignment: Alignment.center,
                             child: const CircularProgressIndicator(),
                           ),
-                          //errorWidget: (context, url, error) => Image.asset("assets/images/arena.jpg")
                         ),
                       ),
                     ),
@@ -894,12 +870,10 @@ class _CandidatoCardState extends State<CandidatoCard> {
                     .onValue
                     .listen((DatabaseEvent event) {
                   final data = event.snapshot.value as Map;
-                  //print(data);
 
                   appointmentData.assignAll(data);
                 });
 
-                //Future.delayed(const Duration(milliseconds: 355));
 
                 sendToServer2Create(
                     uid,
@@ -943,7 +917,6 @@ class _CandidatoCardState extends State<CandidatoCard> {
                     .onValue
                     .listen((DatabaseEvent event) {
                   final data = event.snapshot.value as Map;
-                  //print(data);
 
                   appointmentData.assignAll(data);
                 });
@@ -952,14 +925,11 @@ class _CandidatoCardState extends State<CandidatoCard> {
                 counter1 = 0;
               });
 
-              //Future.delayed(const Duration(milliseconds: 355));
 
               if (appointmentData.isEmpty) {
                 appointmentData.assignAll(widget.appointment);
-                //print(widget.appointment);
               }
 
-              //print(appointmentData);
               Future.delayed(const Duration(milliseconds: 500), () {
                 appointmentData.isEmpty
                     ? appointmentData = widget.appointment
@@ -1020,7 +990,6 @@ class _CandidatoCardState extends State<CandidatoCard> {
                             alignment: Alignment.center,
                             child: const CircularProgressIndicator(),
                           ),
-                          //errorWidget: (context, url, error) => Image.asset("assets/images/arena.jpg")
                         ),
                       ),
                     ),

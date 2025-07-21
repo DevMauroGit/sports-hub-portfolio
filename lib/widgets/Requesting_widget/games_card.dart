@@ -204,8 +204,6 @@ class _GameCardState extends State<GameCard> {
                                       : 18,
                               fontWeight: FontWeight.w700),
                           btnOkOnPress: () async {
-                            //   print('game: ${widget.game}');
-                            //   print(widget.appointment);
 
                             Navigator.of(context)
                                 .push(HeroDialogRoute(builder: (context) {
@@ -232,7 +230,6 @@ class _GameCardState extends State<GameCard> {
                                 for (int i = 1;
                                     i <= widget.appointment['playerCount$a'];
                                     i++) {
-                                  //print('appointment: ${widget.appointment['team${a}_P$i']}');
 
                                   QuerySnapshot<
                                       Map<String,
@@ -242,13 +239,11 @@ class _GameCardState extends State<GameCard> {
                                       .where('email',
                                           isEqualTo: widget
                                               .appointment['team${a}_P$i'])
-                                      //.where('date', isEqualTo: widget.appointment['date'])
                                       .get();
                                   final profile = data.docs
                                       .map((user) =>
                                           UserModel.fromSnapshot(user))
                                       .single;
-                                  //print(profile);
 
                                   await FirebaseFirestore.instance
                                       .collection('User')
@@ -290,7 +285,6 @@ class _GameCardState extends State<GameCard> {
                                 }
                               }
                             } else {
-                              //print('No data available.');
                             }
 
                             sendGamePermission(
@@ -311,8 +305,6 @@ class _GameCardState extends State<GameCard> {
                                 .doc(widget.game.date)
                                 .delete();
 
-                            //userController.allGames.clear();
-                            // ignore: use_build_context_synchronously
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(
@@ -433,7 +425,6 @@ class _GameCardState extends State<GameCard> {
         }
       }
       for (int i = 1; 1 < appointment['playerCount$a']; i++) {
-        //print(appointment['team${a}_$i']);
         Map utente = {};
         FutureBuilder<DocumentSnapshot>(
             future: FirebaseFirestore.instance
@@ -445,7 +436,6 @@ class _GameCardState extends State<GameCard> {
                 Map<String, dynamic> profile =
                     snapshot.data!.data() as Map<String, dynamic>;
 
-                //print('profile: $profile');
                 setState(() {
                   utente = profile;
                 });
@@ -454,7 +444,6 @@ class _GameCardState extends State<GameCard> {
               }
               return Container();
             })));
-        //print(utente);
         await FirebaseFirestore.instance
             .collection('User')
             .doc(appointment['team${a}_$i'])
@@ -684,7 +673,6 @@ class _TennisGameCardState extends State<TennisGameCard> {
                                       .where('email',
                                           isEqualTo: widget
                                               .appointment['team${a}_P$i'])
-                                      //.where('date', isEqualTo: widget.appointment['date'])
                                       .get();
                                   final profile = data.docs
                                       .map((user) =>
@@ -730,7 +718,6 @@ class _TennisGameCardState extends State<TennisGameCard> {
                                 }
                               }
                             } else {
-                              //print('No data available.');
                             }
 
                             sendGamePermission(
@@ -751,8 +738,6 @@ class _TennisGameCardState extends State<TennisGameCard> {
                                 .doc(widget.game.date)
                                 .delete();
 
-                            //userController.allGames.clear();
-                            // ignore: use_build_context_synchronously
                             Navigator.push(
                                 context,
                                 MaterialPageRoute(

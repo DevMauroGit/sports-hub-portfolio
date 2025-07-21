@@ -67,8 +67,6 @@ class _ChangeCard1State extends State<ChangeCard1> {
           margin: const EdgeInsets.only(bottom: kDefaultPadding),
           child: GestureDetector(
               onTap: () {
-                print('lista: $list1');
-                print('list lenght: ${list1.length}');
 
                 if (list1.isEmpty) {
                   list1.add(widget.teammate['email']);
@@ -80,11 +78,9 @@ class _ChangeCard1State extends State<ChangeCard1> {
                       .onValue
                       .listen((DatabaseEvent event) {
                     final data = event.snapshot.value as Map;
-                    //print(data);
 
                     appointmentData.assignAll(data);
                   });
-                  print('list: $list1');
 
                   sendChangeToServer1(
                       uid,
@@ -106,8 +102,6 @@ class _ChangeCard1State extends State<ChangeCard1> {
                     counter1 = counter1 + 1;
                   }
                 }
-                print('c: $counter1');
-                print('l: ${list1.length}');
                 counter1 == list1.length
                     ? sendChangeToServer1(
                         uid,
@@ -302,7 +296,6 @@ class _ChangeCardState extends State<ChangeCard2> {
                       .onValue
                       .listen((DatabaseEvent event) {
                     final data = event.snapshot.value as Map;
-                    //print(data);
 
                     appointmentData.assignAll(data);
                   });
@@ -349,21 +342,18 @@ class _ChangeCardState extends State<ChangeCard2> {
                       .onValue
                       .listen((DatabaseEvent event) {
                     final data = event.snapshot.value as Map;
-                    //print(data);
 
                     appointmentData.assignAll(data);
                   });
                 }
                 counter1 = 0;
 
-                //Future.delayed(Duration(milliseconds: 355));
 
                 if (appointmentData.isEmpty) {
                   appointmentData.assignAll(widget.appointment);
                   print('if');
                 }
 
-                //print(appointmentData);
                 appointmentData.isEmpty
                     ? appointmentData = widget.appointment
                     : Container();
@@ -424,7 +414,6 @@ class _ChangeCardState extends State<ChangeCard2> {
                               alignment: Alignment.center,
                               child: const CircularProgressIndicator(),
                             ),
-                            //errorWidget: (context, url, error) => Image.asset("assets/images/arena.jpg")
                           ),
                         ),
                       ),
@@ -507,8 +496,6 @@ class _ChangeCreateCard1State extends State<ChangeCreateCard1> {
           margin: const EdgeInsets.only(bottom: kDefaultPadding),
           child: GestureDetector(
               onTap: () {
-                print('lista: $list1');
-                print('list lenght: ${list1.length}');
 
                 if (list1.isEmpty) {
                   list1.add(widget.teammate['email']);
@@ -524,7 +511,6 @@ class _ChangeCreateCard1State extends State<ChangeCreateCard1> {
 
                     appointmentData.assignAll(data);
                   });
-                  print('list: $list1');
 
                   sendChangeToServer1Create(
                       uid,
@@ -546,8 +532,6 @@ class _ChangeCreateCard1State extends State<ChangeCreateCard1> {
                     counter1 = counter1 + 1;
                   }
                 }
-                print('c: $counter1');
-                print('l: ${list1.length}');
                 counter1 == list1.length
                     ? sendChangeToServer1Create(
                         uid,
@@ -640,7 +624,6 @@ class _ChangeCreateCard1State extends State<ChangeCreateCard1> {
                               alignment: Alignment.center,
                               child: const CircularProgressIndicator(),
                             ),
-                            //errorWidget: (context, url, error) => Image.asset("assets/images/arena.jpg")
                           ),
                         ),
                       ),
@@ -732,7 +715,6 @@ class _ChangeCreateCardState extends State<ChangeCreateCard2> {
                       .onValue
                       .listen((DatabaseEvent event) {
                     final data = event.snapshot.value as Map;
-                    //print(data);
 
                     appointmentData.assignAll(data);
                   });
@@ -779,21 +761,18 @@ class _ChangeCreateCardState extends State<ChangeCreateCard2> {
                       .onValue
                       .listen((DatabaseEvent event) {
                     final data = event.snapshot.value as Map;
-                    //print(data);
 
                     appointmentData.assignAll(data);
                   });
                 }
                 counter1 = 0;
 
-                //Future.delayed(Duration(milliseconds: 355));
 
                 if (appointmentData.isEmpty) {
                   appointmentData.assignAll(widget.appointment);
                   print('if');
                 }
 
-                //print(appointmentData);
                 appointmentData.isEmpty
                     ? appointmentData = widget.appointment
                     : Container();
@@ -912,7 +891,6 @@ void sendChangeToServer1(
       .child('$month-$day-$time')
       .update({
     'playerCount1': playerCount,
-    //'playerCount1Tot': playerCount,
     'team1_P$p': selectedUser,
   });
 }
@@ -942,7 +920,6 @@ void sendChangeToServer2(
       .child('$month-$day-$time')
       .update({
     'playerCount2': playerCount,
-    //'playerCount2Tot': playerCount,
     'team2_P$p': selectedUser,
   });
 }
@@ -970,7 +947,6 @@ void sendChangeToServer1Create(
       .child('$month-$day-$time')
       .update({
     'playerCount1': playerCount,
-    //'playerCount1Tot': playerCount,
     'team1_P$p': selectedUser,
   });
 
@@ -1012,7 +988,6 @@ void sendChangeToServer2Create(
       .child('$month-$day-$time')
       .update({
     'playerCount2': playerCount,
-    //'playerCount2Tot': playerCount,
     'team2_P$p': selectedUser,
   });
 
@@ -1026,7 +1001,6 @@ void sendChangeToServer2Create(
       .child('$month-$day-$time')
       .update({
     'playerCount2': playerCount,
-    //'playerCount2Tot': playerCount,
     'team2_P$p': selectedUser,
   });
 }
