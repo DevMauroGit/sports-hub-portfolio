@@ -845,13 +845,6 @@ void sendPushMessage(String token) async {
         },
         body: jsonEncode({
           'priority': 'high',
-          //     'data': {
-          //       'click_action': 'FLUTTER_NOTIFICATION_CLICK',
-          //       'status': 'done',
-          //       'body': 'Controlla il calendario, nuovi campi sono stati prenotati.',
-          //       'title': 'Nuova Prenotazione!',
-          //       'android_channel_id': 'sportshub'
-          //     },
 
           'notification': {
             'title': 'Conferma Disponibile!',
