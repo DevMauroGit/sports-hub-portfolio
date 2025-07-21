@@ -16,6 +16,7 @@ class GameModel {
   String giorno;
   bool crea_match;
 
+  /// Constructor for GameModel with all required fields
   GameModel({
     required this.host,
     required this.team,
@@ -33,6 +34,7 @@ class GameModel {
     required this.crea_match,
   });
 
+  /// Creates a GameModel instance from a JSON map
   GameModel.fromJson(Map<String, dynamic> json)
       : host = json['host'] as String,
         team = json['team'] as int,
@@ -49,6 +51,7 @@ class GameModel {
         giorno = json['giorno'] as String,
         crea_match = json['crea_match'] as bool;
 
+  /// Creates a GameModel instance from a Firestore document snapshot
   GameModel.fromSnapshot(DocumentSnapshot<Map<String, dynamic>> json)
       : host = json['host'],
         team = json['team'],
@@ -65,6 +68,7 @@ class GameModel {
         giorno = json['giorno'],
         crea_match = json['crea_match'];
 
+  /// Converts the GameModel instance into a JSON map
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
     data['host'] = host;

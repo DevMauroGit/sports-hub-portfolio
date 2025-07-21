@@ -5,6 +5,8 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:go_router/go_router.dart';
+import 'package:sports_hub_ios/cubit/auth_cubit.dart';
 import 'package:sports_hub_ios/page/home_page.dart';
 import 'package:sports_hub_ios/page/searching_page_2.dart';
 import 'package:sports_hub_ios/screen/home_page_screen.dart';
@@ -20,10 +22,10 @@ class OspitePage extends StatefulWidget {
       required this.w,
       required this.page});
 
-  final String city;
-  final double h;
-  final double w;
-  final String page;
+  final String city; // City or province used for search
+  final double h; // Height of screen for responsive UI
+  final double w; // Width of screen for responsive UI
+  final String page; // Determines which content to display ('games' or 'clubs')
 
   @override
   State<OspitePage> createState() => _OspitePageState();
@@ -32,8 +34,10 @@ class OspitePage extends StatefulWidget {
 final formKey = GlobalKey<FormState>();
 
 class _OspitePageState extends State<OspitePage> {
-  var cityController = TextEditingController();
-  var cityCreateController = TextEditingController();
+  var cityController =
+      TextEditingController(); // Controller for city search input
+  var cityCreateController =
+      TextEditingController(); // Controller for game search input
 
   @override
   void initState() {
@@ -44,21 +48,20 @@ class _OspitePageState extends State<OspitePage> {
   Widget build(BuildContext context) {
     print('OSPITE PAGE');
 
-    final allClubs = <Map<String, dynamic>>[];
+    final allClubs =
+        <Map<String, dynamic>>[]; // List to hold clubs fetched from Firestore
 
     return MediaQuery(
         data: MediaQuery.of(context)
             .copyWith(textScaler: const TextScaler.linear(1.2)),
         child: Scaffold(
-            //resizeToAvoidBottomInset: false,
-            appBar: TopBar(),
+            appBar: TopBar(), // Custom top bar widget
             body: Stack(children: [
               SingleChildScrollView(
                   controller: scrollController,
                   child: Container(
                       margin:
                           const EdgeInsets.only(top: 20, left: 20, right: 20),
-                      //height: h*0.8,
                       width: widget.w * 0.95,
                       child: Column(children: [
                         SizedBox(
@@ -67,6 +70,7 @@ class _OspitePageState extends State<OspitePage> {
                               mainAxisAlignment: MainAxisAlignment.start,
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
+                                // Title for club search section
                                 Text(
                                     'Cerca i Clubs della tua Città o Provincia',
                                     textAlign: TextAlign.start,
@@ -75,6 +79,7 @@ class _OspitePageState extends State<OspitePage> {
                                         fontWeight: FontWeight.bold,
                                         color: Colors.black)),
                                 SizedBox(height: widget.h * 0.01),
+                                // Text input for city search with uppercase formatter
                                 TextFormField(
                                   inputFormatters: <TextInputFormatter>[
                                     UpperCaseTextFormatter()
@@ -97,6 +102,7 @@ class _OspitePageState extends State<OspitePage> {
                                               BorderRadius.circular(30))),
                                 ),
                                 const SizedBox(height: 20),
+                                // Search button for clubs
                                 Center(
                                   child: ElevatedButton(
                                     style: ElevatedButton.styleFrom(
@@ -107,14 +113,16 @@ class _OspitePageState extends State<OspitePage> {
                                     onPressed: () {
                                       city = cityController.text.trim();
 
-                                      Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: ((context) => OspitePage(
-                                                  city: city,
-                                                  h: widget.h,
-                                                  w: widget.w,
-                                                  page: 'clubs'))));
+                                      // Navigate to same page with updated city and page='club'
+                                      context.go(
+                                        '/ospite',
+                                        extra: {
+                                          'city': city,
+                                          'h': widget.h,
+                                          'w': widget.w,
+                                          'page': 'club',
+                                        },
+                                      );
                                     },
                                     child: const Text(
                                       "Cerca",
@@ -135,6 +143,7 @@ class _OspitePageState extends State<OspitePage> {
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
+                                        // Title for available games search section
                                         Text('Partite disponibili a ',
                                             textAlign: TextAlign.start,
                                             style: TextStyle(
@@ -143,6 +152,7 @@ class _OspitePageState extends State<OspitePage> {
                                                 fontWeight: FontWeight.bold,
                                                 color: Colors.black)),
                                         SizedBox(height: widget.h * 0.01),
+                                        // Text input for city to find available games
                                         TextFormField(
                                           inputFormatters: <TextInputFormatter>[
                                             UpperCaseTextFormatter()
@@ -171,6 +181,7 @@ class _OspitePageState extends State<OspitePage> {
                                                           30))),
                                         ),
                                         const SizedBox(height: 20),
+                                        // Search button for available games
                                         Center(
                                           child: ElevatedButton(
                                             style: ElevatedButton.styleFrom(
@@ -184,16 +195,16 @@ class _OspitePageState extends State<OspitePage> {
                                                   .text
                                                   .trim();
 
-                                              Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(
-                                                      builder: ((context) =>
-                                                          OspitePage(
-                                                            city: cityCreate,
-                                                            h: widget.h,
-                                                            w: widget.w,
-                                                            page: 'games',
-                                                          ))));
+                                              // Navigate with updated city and page='games'
+                                              context.go(
+                                                '/ospite',
+                                                extra: {
+                                                  'city': cityCreate,
+                                                  'h': widget.h,
+                                                  'w': widget.w,
+                                                  'page': 'games',
+                                                },
+                                              );
                                             },
                                             child: const Text(
                                               "Cerca",
@@ -208,11 +219,13 @@ class _OspitePageState extends State<OspitePage> {
                                         const SizedBox(
                                           height: 20,
                                         ),
+                                        // Conditionally display games or clubs depending on page param
                                         widget.page == 'games'
                                             ? Container(
                                                 margin: EdgeInsets.symmetric(
                                                     vertical: 20),
                                                 height: widget.h * 0.6,
+                                                // Display available games using FirebaseAnimatedList from Realtime DB
                                                 child: FirebaseAnimatedList(
                                                     query: FirebaseDatabase
                                                             .instanceFor(
@@ -249,6 +262,7 @@ class _OspitePageState extends State<OspitePage> {
                                                     }))
                                             : widget.page == 'clubs'
                                                 ? FutureBuilder(
+                                                    // Query Firestore to get clubs for the city ordered by 'id'
                                                     future: FirebaseFirestore
                                                         .instance
                                                         .collection('Clubs')
@@ -262,11 +276,12 @@ class _OspitePageState extends State<OspitePage> {
                                                         (context, snapshot) {
                                                       if (snapshot.hasError) {
                                                         print(
-                                                            'errore caricamento dati');
+                                                            'Error loading data');
                                                       } else if (snapshot
                                                               .connectionState ==
                                                           ConnectionState
                                                               .waiting) {
+                                                        // Loading indicator while fetching clubs
                                                         return Container(
                                                           margin: const EdgeInsets
                                                               .all(
@@ -278,6 +293,7 @@ class _OspitePageState extends State<OspitePage> {
                                                         );
                                                       } else if (snapshot
                                                           .hasData) {
+                                                        // Collect all clubs into allClubs list
                                                         for (int i = 0;
                                                             i <
                                                                 snapshot
@@ -290,14 +306,12 @@ class _OspitePageState extends State<OspitePage> {
                                                                   .data!.docs
                                                                   .elementAt(i)
                                                                   .data();
-                                                          //allClubs.assignAll(clubList);
-                                                          //print(clubList);
                                                           allClubs
                                                               .add(clubList);
                                                         }
-                                                        //print('has data ${allClubs}');
                                                       }
 
+                                                      // Show message if no clubs found, else show carousel of clubs
                                                       return allClubs.isEmpty
                                                           ? Container(
                                                               height: widget.h *
@@ -344,7 +358,6 @@ class _OspitePageState extends State<OspitePage> {
                                                                   0.8,
                                                               width: widget.w *
                                                                   0.75,
-                                                              //color: kSecondaryColor,
                                                               child:
                                                                   SearchedClubCarousel(
                                                                 clubs: allClubs,
@@ -364,6 +377,7 @@ class _OspitePageState extends State<OspitePage> {
   }
 }
 
+// Custom TextInputFormatter to capitalize first letter and lowercase the rest
 class UpperCaseTextFormatter extends TextInputFormatter {
   @override
   TextEditingValue formatEditUpdate(
@@ -375,6 +389,7 @@ class UpperCaseTextFormatter extends TextInputFormatter {
   }
 }
 
+// Helper function to capitalize the first letter and lowercase the rest of a string
 String capitalize(String value) {
   if (value.trim().isEmpty) return "";
   return "${value[0].toUpperCase()}${value.substring(1).toLowerCase()}";

@@ -25,33 +25,38 @@ class OfferToPlay extends StatefulWidget {
 }
 
 class _OfferToPlayState extends State<OfferToPlay> {
+  // Placeholder getter, not used
   get allTeammate => null;
 
   @override
   Widget build(BuildContext context) {
     List list1 = [];
 
+    // Get current user email
     String email = FirebaseAuth.instance.currentUser!.email.toString();
 
+    // Lists to store teammates and their data
     List allTeammate = [];
     List allTeammateData = [];
 
+    // Map to store appointment data from Firebase Realtime Database
     Map appointmentData = {};
 
-    //List list1 = [];
-
+    // Fill list1 with players from team 1 excluding 'ospite' (guest)
     for (int i = 0; i < widget.appointment['playerCount1Tot']; i++) {
       if (widget.appointment['team1_P${i + 1}'] != 'ospite') {
         list1.add(widget.appointment['team1_P${i + 1}']);
       }
     }
 
+    // Fill list1 with players from team 2 excluding 'ospite'
     for (int i = 0; i < widget.appointment['playerCount2Tot']; i++) {
       if (widget.appointment['team2_P${i + 1}'] != 'ospite') {
         list1.add(widget.appointment['team2_P${i + 1}']);
       }
     }
 
+    // Listen for realtime updates from Firebase Realtime Database on appointment data
     FirebaseDatabase.instanceFor(
             app: Firebase.app(), databaseURL: dbPrenotazioniURL)
         .ref(
@@ -60,6 +65,7 @@ class _OfferToPlayState extends State<OfferToPlay> {
         .listen((DatabaseEvent event) {
       final data = event.snapshot.value as Map;
 
+      // Clear and refill list1 with latest players and candidates excluding 'ospite'
       list1.clear();
 
       for (int i = 0; i < widget.appointment['playerCount1Tot']; i++) {
@@ -80,6 +86,7 @@ class _OfferToPlayState extends State<OfferToPlay> {
         }
       }
 
+      // Update appointment data with latest values from database
       appointmentData.assignAll(data);
     });
 
@@ -92,6 +99,7 @@ class _OfferToPlayState extends State<OfferToPlay> {
               appBar: TopBar(),
               bottomNavigationBar: BottomBar(context),
               body: FutureBuilder(
+                  // Fetch friends of current user who have not requested friendship (isRequested == 'false')
                   future: FirebaseFirestore.instance
                       .collection('User')
                       .doc(email)
@@ -100,9 +108,10 @@ class _OfferToPlayState extends State<OfferToPlay> {
                       .get(),
                   builder: (context, snapshot) {
                     if (snapshot.hasError) {
-                      print('errore caricamento dati');
+                      print('Error loading data');
                     } else if (snapshot.connectionState ==
                         ConnectionState.waiting) {
+                      // Show loading indicator while waiting for data
                       return Container(
                         margin: const EdgeInsets.all(kDefaultPadding),
                         child: const Center(
@@ -110,16 +119,17 @@ class _OfferToPlayState extends State<OfferToPlay> {
                         ),
                       );
                     } else if (snapshot.hasData) {
+                      // Parse friend list from snapshot
                       final friendList = snapshot.data!.docs
                           .map((friends) => FriendModel.fromSnapshot(friends))
                           .toList();
                       allTeammate.assignAll(friendList);
-                      //print('carousel has data');
                     }
 
                     return SingleChildScrollView(
                         child: Column(children: [
                       SizedBox(height: widget.h * 0.02),
+                      // For each teammate, fetch detailed user data from Firestore
                       for (int i = 0; i < allTeammate.length; i++)
                         if (allTeammate.isNotEmpty)
                           FutureBuilder(
@@ -130,7 +140,7 @@ class _OfferToPlayState extends State<OfferToPlay> {
                                   .get(),
                               builder: (context, snapshot) {
                                 if (snapshot.hasError) {
-                                  print('errore caricamento dati');
+                                  print('Error loading data');
                                 } else if (snapshot.connectionState ==
                                     ConnectionState.waiting) {
                                   return Container();
@@ -143,7 +153,7 @@ class _OfferToPlayState extends State<OfferToPlay> {
 
                                 return Container();
                               }),
-                      //widget.appointment['sport'] == 'football' ?
+                      // Main offer to play screen, passing necessary data
                       OfferToPlayScreen(
                         h: widget.h,
                         w: widget.w,
@@ -152,9 +162,6 @@ class _OfferToPlayState extends State<OfferToPlay> {
                       )
                     ]));
                   }),
-              //if(showFriends==true)
-
-              //SizedBox(height: h*0.05),
             )));
   }
 }

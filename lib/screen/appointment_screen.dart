@@ -12,39 +12,41 @@ import 'package:table_calendar/table_calendar.dart';
 import 'package:firebase_database/firebase_database.dart';
 
 class AppointmentScreen extends StatefulWidget {
+  final Map pitch; // Contains pitch details such as club and sport
+  final DateTime daySelected; // Currently selected day for appointment
+
   const AppointmentScreen({
     super.key,
     required this.pitch,
     required this.daySelected,
   });
 
-  //final PitchModel pitch;
-  final Map pitch;
-  final DateTime daySelected;
-
   @override
   State<AppointmentScreen> createState() => AppointmentScreenState();
 }
 
 class AppointmentScreenState extends State<AppointmentScreen> {
-  DateTime today = DateTime.now();
-  String time = '';
-  String hour = 'no time';
-  int min = 0;
+  DateTime today = DateTime.now(); // Holds the current focused date in calendar
+  String time = ''; // Stores selected time slot as string
+  String hour = 'no time'; // Selected hour
+  int min = 0; // Selected minutes
+
+  // Called when a different day is selected on the calendar
   void _onDaySelected(
     DateTime day,
     DateTime focusDay,
   ) {
     setState(() {
-      today = day;
+      today = day; // Update focused day
+      // Navigate to a new AppointmentScreen for the selected day
       Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (context) => AppointmentScreen(
-                    pitch: widget.pitch,
-                    daySelected: today,
-                  )) //AppointmentScreen2(pitch: widget.pitch, daySelected: today)),
-          );
+        context,
+        MaterialPageRoute(
+            builder: (context) => AppointmentScreen(
+                  pitch: widget.pitch,
+                  daySelected: today,
+                )),
+      );
     });
   }
 
@@ -53,42 +55,48 @@ class AppointmentScreenState extends State<AppointmentScreen> {
     super.initState();
   }
 
+  // Firebase realtime database references initialization
   DatabaseReference ref = FirebaseDatabase.instance.ref();
   final GlobalKey<FormState> _key = GlobalKey();
   final databaseRef = FirebaseDatabase.instance.ref();
   DatabaseReference reference =
       FirebaseDatabase.instance.ref().child('Calendario');
 
+  // User controller instance managed by GetX
   UserController userController = Get.put(UserController());
 
   @override
   Widget build(BuildContext context) {
-    double h = MediaQuery.of(context).size.height;
-    double w = MediaQuery.of(context).size.width;
+    double h = MediaQuery.of(context).size.height; // Screen height
+    double w = MediaQuery.of(context).size.width; // Screen width
 
+    // Format month string for date display or key generation
     String data = "";
     if (widget.daySelected.month < 10) {
       setState(() {
-        data = "0";
+        data = "0"; // Prefix single digit months with '0'
       });
     }
     final getMonth =
         "$data${widget.daySelected.month}_${DateConverted.getMonth(widget.daySelected.month)}";
 
+    // Initialize locale-specific date formatting for Italian
     initializeDateFormatting('it');
 
     return MediaQuery(
-        data: MediaQuery.of(context)
-            .copyWith(textScaler: const TextScaler.linear(1.2)),
+        data: MediaQuery.of(context).copyWith(
+            textScaler:
+                const TextScaler.linear(1.2)), // Adjust global text scale
         child: Scaffold(
-            appBar: TopBar(),
-            bottomNavigationBar: BottomBar(context),
+            appBar: TopBar(), // Custom top app bar widget
+            bottomNavigationBar:
+                BottomBar(context), // Custom bottom navigation widget
             body: CustomScrollView(slivers: [
               SliverToBoxAdapter(
                   child: Form(
                       key: _key,
                       child: Column(children: [
-                        //Header(size: size),
+                        // Header area containing pitch info and calendar
                         Container(
                           padding: const EdgeInsets.only(
                               left: kDefaultPadding,
@@ -96,6 +104,7 @@ class AppointmentScreenState extends State<AppointmentScreen> {
                               top: 20),
                           child: Column(
                             children: [
+                              // Row displaying club name and sport icon
                               Row(
                                 mainAxisAlignment:
                                     MainAxisAlignment.spaceEvenly,
@@ -109,6 +118,7 @@ class AppointmentScreenState extends State<AppointmentScreen> {
                                         color: Colors.black,
                                         fontWeight: FontWeight.bold),
                                   ),
+                                  // Show soccer or tennis icon based on sport type
                                   widget.pitch['sport'] == 'football'
                                       ? Container(
                                           width: 40,
@@ -146,6 +156,7 @@ class AppointmentScreenState extends State<AppointmentScreen> {
                                               ))),
                                 ],
                               ),
+                              // Calendar widget to pick a date for booking
                               TableCalendar(
                                 locale: "it",
                                 weekendDays: const [],
@@ -194,6 +205,7 @@ class AppointmentScreenState extends State<AppointmentScreen> {
                                     DateTime.now().month + 1, 31),
                                 onDaySelected: _onDaySelected,
                               ),
+                              // Instruction text prompting user to select an available time slot
                               Padding(
                                 padding: const EdgeInsets.symmetric(
                                     horizontal: 10, vertical: 20),
@@ -201,7 +213,7 @@ class AppointmentScreenState extends State<AppointmentScreen> {
                                   child: Column(
                                     children: [
                                       Text(
-                                        'Seleziona uno degli Orari Disponibili per PRENOTARE',
+                                        'Select one of the available time slots to BOOK',
                                         style: TextStyle(
                                             fontSize: w > 605
                                                 ? 25
@@ -220,6 +232,7 @@ class AppointmentScreenState extends State<AppointmentScreen> {
                           ),
                         )
                       ]))),
+              // Load and display pitch booking details from Firestore asynchronously
               SliverToBoxAdapter(
                 child: Form(
                     child: FutureBuilder<DocumentSnapshot>(
@@ -241,7 +254,7 @@ class AppointmentScreenState extends State<AppointmentScreen> {
                                     club: club,
                                     pitch: widget.pitch));
                           }
-                          return Container();
+                          return Container(); // Empty placeholder while loading
                         })))),
               ),
             ])));

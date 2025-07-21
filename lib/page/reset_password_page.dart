@@ -7,6 +7,7 @@ import 'package:get/get.dart';
 import 'package:sports_hub_ios/page/signup_page.dart';
 import 'package:sports_hub_ios/utils/constants.dart';
 
+// Page for resetting the user's password via email
 class ResetPasswordPage extends StatefulWidget {
   const ResetPasswordPage({super.key});
 
@@ -20,6 +21,7 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
 
+    // Root container with background image and semi-transparent overlay
     return MediaQuery(
         data: MediaQuery.of(context)
             .copyWith(textScaler: const TextScaler.linear(1.2)),
@@ -40,9 +42,8 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
         ));
   }
 
+  // Main body of the page with form elements
   Widget _page(context, h, w) {
-    //Size size = MediaQuery.of(context).size;
-
     var emailController = TextEditingController();
 
     return Stack(children: [
@@ -53,7 +54,6 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
           child: Container(
               width: w,
               height: h > 700 ? h * 0.70 : h * 0.85,
-              //height: h > 700 ? h * 0.65 : h * 0.78,
               margin: EdgeInsets.only(top: h * 0.15),
               padding: const EdgeInsets.only(left: 20, right: 20, top: 20),
               decoration: const BoxDecoration(
@@ -68,6 +68,8 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         const SizedBox(height: 50),
+
+                        // Instruction title
                         Text(
                           "Inserisci la tua email per resettare la password",
                           textAlign: TextAlign.center,
@@ -76,7 +78,10 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
                               color: Colors.black,
                               fontWeight: FontWeight.w500),
                         ),
+
                         const SizedBox(height: 20),
+
+                        // Instruction subtitle
                         Text(
                           "Controlla la tua casella di posta, ti invieremo i link necesari",
                           textAlign: TextAlign.center,
@@ -85,7 +90,10 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
                             color: Colors.black,
                           ),
                         ),
+
                         const SizedBox(height: 50),
+
+                        // Email input field
                         Container(
                           width: 300,
                           decoration: BoxDecoration(
@@ -123,7 +131,10 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
                                     : null,
                           ),
                         ),
+
                         const SizedBox(height: 50),
+
+                        // Empty container (potentially used as spacer or for future content)
                         Container(
                           width: 300,
                           decoration: BoxDecoration(
@@ -137,6 +148,8 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
                                     color: Colors.grey.withOpacity(0.2))
                               ]),
                         ),
+
+                        // Button to trigger password reset
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
                             backgroundColor: kBackgroundColor2,
@@ -183,7 +196,10 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
                                 fontStyle: FontStyle.italic),
                           ),
                         ),
+
                         const SizedBox(height: 30),
+
+                        // Redirect to SignUpPage
                         GestureDetector(
                           onTap: () {
                             Navigator.push(
@@ -220,6 +236,7 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
     ]);
   }
 
+  // Sends the password reset email and handles errors
   Future resetPassword(String emailController) async {
     showDialog(
         context: context,
@@ -258,6 +275,7 @@ class _ResetPasswordPageState extends State<ResetPasswordPage> {
           backgroundColor: Colors.redAccent.withOpacity(0.6),
           colorText: Colors.black);
     }
+
     Navigator.pop(context);
   }
 }

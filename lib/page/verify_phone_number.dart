@@ -4,11 +4,13 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_close_app/flutter_close_app.dart';
 import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 import 'package:onscreen_num_keyboard/onscreen_num_keyboard.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 import 'package:sports_hub_ios/Autentication_repository/authentication_repository.dart';
 import 'package:sports_hub_ios/controllers/auth_controller.dart';
 import 'package:sports_hub_ios/controllers/otp_controller.dart';
+import 'package:sports_hub_ios/cubit/auth_cubit.dart';
 import 'package:sports_hub_ios/page/admin_page.dart';
 import 'package:sports_hub_ios/page/edit_phone_page.dart';
 import 'package:sports_hub_ios/page/home_page.dart';
@@ -220,17 +222,13 @@ class _VerifyPhoneNumberPageState extends State<VerifyPhoneNumberPage> {
                                       onTap: () {},
                                       child: GestureDetector(
                                           onTap: () {
-                                            Future.delayed(Duration.zero, () {
-                                              Navigator.push(
-                                                  context,
-                                                  MaterialPageRoute(
-                                                      builder: (context) =>
-                                                          EditNumberPage(
-                                                            h: widget.h,
-                                                            w: widget.w,
-                                                            size: widget.size,
-                                                          )));
-                                            });
+                                            context.go('/edit-number',
+                                            extra: {
+                                              'h': widget.h,
+                                              'w': widget.w,
+                                              'size': widget.size,
+                                            }
+                                            );
                                           },
                                           child: buildEditIcon(
                                               kBackgroundColor2, widget.w)))

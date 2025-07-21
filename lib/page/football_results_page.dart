@@ -24,8 +24,6 @@ class FootballResultsPage extends StatefulWidget {
 }
 
 class _FootballResultsPageState extends State<FootballResultsPage> {
-  get allTeammate => null;
-
   @override
   Widget build(BuildContext context) {
     List list1 = [];
@@ -37,25 +35,25 @@ class _FootballResultsPageState extends State<FootballResultsPage> {
     List allTeammate = [];
     List allTeammateData = [];
 
-    //List list1 = [];
-
+    // If the appointment contains total players, prepare the data
     if (widget.appointment['playerCount1Tot'] != null) {
+      // Add team1 players (excluding guest)
       for (int i = 0; i < widget.appointment['playerCount1Tot']; i++) {
         if (widget.appointment['team1_P${i + 1}'] != 'ospite') {
           list1.add(widget.appointment['team1_P${i + 1}']);
         }
       }
 
+      // Add team2 players (excluding guest)
       for (int i = 0; i < widget.appointment['playerCount2Tot']; i++) {
         if (widget.appointment['team2_P${i + 1}'] != 'ospite') {
           list1.add(widget.appointment['team2_P${i + 1}']);
         }
       }
 
-      String address = '';
+      String address = widget.create ? 'football/Crea_Match' : 'football';
 
-      widget.create ? address = 'football/Crea_Match' : address = 'football';
-
+      // Clear and refill list1 (may be redundant)
       list1.clear();
 
       for (int i = 0; i < widget.appointment['playerCount1Tot']; i++) {
@@ -71,133 +69,128 @@ class _FootballResultsPageState extends State<FootballResultsPage> {
       }
 
       return PopScope(
-          canPop: false,
-          child: MediaQuery(
-              data: MediaQuery.of(context)
-                  .copyWith(textScaler: const TextScaler.linear(1.2)),
-              child: Scaffold(
-                appBar: TopBar(),
-                bottomNavigationBar: BottomBar(context),
-                body: FutureBuilder(
-                    future: FirebaseFirestore.instance
-                        .collection('User')
-                        .doc(email)
-                        .collection('Friends')
-                        .where('isRequested', isEqualTo: 'false')
-                        .get(),
-                    builder: (context, snapshot) {
-                      if (snapshot.hasError) {
-                        print('errore caricamento dati');
-                      } else if (snapshot.connectionState ==
-                          ConnectionState.waiting) {
-                        return Container(
-                          margin: const EdgeInsets.all(kDefaultPadding),
-                          child: const Center(
-                            child: CircularProgressIndicator(),
+        canPop: false,
+        child: MediaQuery(
+          data: MediaQuery.of(context)
+              .copyWith(textScaler: const TextScaler.linear(1.2)),
+          child: Scaffold(
+            appBar: TopBar(),
+            bottomNavigationBar: BottomBar(context),
+            body: FutureBuilder(
+              future: FirebaseFirestore.instance
+                  .collection('User')
+                  .doc(email)
+                  .collection('Friends')
+                  .where('isRequested', isEqualTo: 'false')
+                  .get(),
+              builder: (context, snapshot) {
+                if (snapshot.hasError) {
+                  print('Error loading data');
+                } else if (snapshot.connectionState ==
+                    ConnectionState.waiting) {
+                  return Container(
+                    margin: const EdgeInsets.all(kDefaultPadding),
+                    child: const Center(
+                      child: CircularProgressIndicator(),
+                    ),
+                  );
+                } else if (snapshot.hasData) {
+                  final friendList = snapshot.data!.docs
+                      .map((friends) => FriendModel.fromSnapshot(friends))
+                      .toList();
+                  allTeammate.assignAll(friendList);
+                }
+
+                return SingleChildScrollView(
+                  child: Column(
+                    children: [
+                      SizedBox(height: h * 0.02),
+                      // For each friend, fetch full user data from Firestore
+                      for (int i = 0; i < allTeammate.length; i++)
+                        if (allTeammate.isNotEmpty)
+                          FutureBuilder(
+                            future: FirebaseFirestore.instance
+                                .collection('User')
+                                .where('email',
+                                    isEqualTo: '${allTeammate[i].email}')
+                                .get(),
+                            builder: (context, snapshot) {
+                              if (snapshot.hasError) {
+                                print('Error loading data');
+                              } else if (snapshot.connectionState ==
+                                  ConnectionState.waiting) {
+                                return Container();
+                              } else if (snapshot.hasData) {
+                                final friend =
+                                    snapshot.data!.docs.elementAt(0).data();
+                                allTeammateData.add(friend);
+                              }
+                              return Container();
+                            },
                           ),
-                        );
-                      } else if (snapshot.hasData) {
-                        final friendList = snapshot.data!.docs
-                            .map((friends) => FriendModel.fromSnapshot(friends))
-                            .toList();
-                        allTeammate.assignAll(friendList);
-                        //print('carousel has data');
-                      }
-
-                      return SingleChildScrollView(
-                          child: Column(children: [
-                        SizedBox(height: h * 0.02),
-                        for (int i = 0; i < allTeammate.length; i++)
-                          if (allTeammate.isNotEmpty)
-                            FutureBuilder(
-                                future: FirebaseFirestore.instance
-                                    .collection('User')
-                                    .where('email',
-                                        isEqualTo: '${allTeammate[i].email}')
-                                    .get(),
-                                builder: (context, snapshot) {
-                                  if (snapshot.hasError) {
-                                    print('errore caricamento dati');
-                                  } else if (snapshot.connectionState ==
-                                      ConnectionState.waiting) {
-                                    return Container();
-                                  } else if (snapshot.hasData) {
-                                    final friend =
-                                        snapshot.data!.docs.elementAt(0).data();
-
-                                    allTeammateData.add(friend);
-
-                                    //print('carousel has data');
-                                    //print('allFriendsData: ${allTeammateData}');
-                                    //print('allFriends: ${allTeammate}s');
-                                  }
-
-                                  return Container();
-                                }),
-                        //widget.appointment['sport'] == 'football' ?
-                        FootballResultsScreen(
-                          allTeammate: allTeammate,
-                          allTeammateData: allTeammateData,
-                          h: h,
-                          w: w,
-                          appointment: widget.appointment,
-                          list1: list1,
-                        )
-
-                        //: TennisResultsScreen(
-                        //  allTeammate: allTeammate,
-                        //  allTeammateData: allTeammateData,
-                        //  h: h,
-                        //  w: w,
-                        //  appointment: appointmentData)
-                      ]));
-                    }),
-                //if(showFriends==true)
-
-                //SizedBox(height: h*0.05),
-              )));
+                      // Pass all data to the results screen
+                      FootballResultsScreen(
+                        allTeammate: allTeammate,
+                        allTeammateData: allTeammateData,
+                        h: h,
+                        w: w,
+                        appointment: widget.appointment,
+                        list1: list1,
+                      )
+                    ],
+                  ),
+                );
+              },
+            ),
+          ),
+        ),
+      );
     } else {
-      String address = '';
+      // Appointment data not complete: fallback to Realtime DB
 
-      widget.create ? address = 'football/Crea_Match' : address = 'football';
+      String address = widget.create ? 'football/Crea_Match' : 'football';
       Map appointmentData = {};
+
+      // Fetch real-time updates from Firebase Realtime Database
       FirebaseDatabase.instanceFor(
-              app: Firebase.app(), databaseURL: dbPrenotazioniURL)
+        app: Firebase.app(),
+        databaseURL: dbPrenotazioniURL,
+      )
           .ref(
               'Prenotazioni/${FirebaseAuth.instance.currentUser!.uid}/$address/${widget.appointment['dateURL']}')
           .onValue
           .listen((DatabaseEvent event) {
         final data = event.snapshot.value as Map;
-        //print(data);
-
         appointmentData.assignAll(data);
-      }); //setState(() {
+      });
+
       counter1 = 0;
 
-      //});
-
-      //Future.delayed(const Duration(milliseconds: 355));
-
+      // If no data is returned from the DB, use widget's appointment as fallback
       if (appointmentData.isEmpty) {
         appointmentData.assignAll(widget.appointment);
         print('empty');
         print(appointmentData);
       }
 
-      //print(appointmentData);
+      // Slight delay before navigation to ensure data is loaded
       Future.delayed(const Duration(milliseconds: 500), () {
         appointmentData.isEmpty
             ? appointmentData = widget.appointment
             : appointmentData = appointmentData;
         Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => FootballResultsPage(
-                      appointment: appointmentData,
-                      create: false,
-                    )));
+          context,
+          MaterialPageRoute(
+            builder: (context) => FootballResultsPage(
+              appointment: appointmentData,
+              create: false,
+            ),
+          ),
+        );
       });
     }
+
+    // Fallback loading screen while waiting for data
     return const LoadingScreen();
   }
 }

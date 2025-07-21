@@ -2,22 +2,23 @@
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 
+/// Model representing a Club with various details including schedule, location, and admin info.
 class ClubModel {
-  String id;
-  String title;
-  String description;
+  final String id;
+  final String title;
+  final String description;
   String? image;
-  String city;
-  String adminEmail;
-  Map<String, dynamic> orari;
-  int slot;
-  int pitches_number;
-  String dbURL;
-  int maps1;
-  int maps2;
-  String address;
-  bool premium;
-  String token;
+  final String city;
+  final String adminEmail;
+  final Map<String, dynamic> orari; // Schedule information
+  final int slot;
+  final int pitches_number;
+  final String dbURL;
+  final int maps1;
+  final int maps2;
+  final String address;
+  final bool premium;
+  final String token;
 
   ClubModel({
     required this.id,
@@ -37,14 +38,15 @@ class ClubModel {
     required this.token,
   });
 
+  /// Creates a ClubModel instance from a JSON map.
   ClubModel.fromJson(Map<String, dynamic> json)
       : id = json['id'] as String,
         title = json['title'] as String,
         description = json['description'] as String,
-        image = json['image'] as String,
+        image = json['image'] as String?,
         city = json['city'] as String,
         adminEmail = json['adminEmail'] as String,
-        orari = json['orari'] as Map<String, dynamic>,
+        orari = Map<String, dynamic>.from(json['orari'] as Map),
         slot = json['slot'] as int,
         pitches_number = json['pitches_number'] as int,
         dbURL = json['dbURL'] as String,
@@ -54,42 +56,42 @@ class ClubModel {
         premium = json['premium'] as bool,
         token = json['token'] as String;
 
-  ClubModel.fromSnapshot(DocumentSnapshot<Map<String, dynamic>> json)
-      : id = json.id,
-        title = json['title'],
-        description = json['description'],
-        image = json['image'],
-        city = json['city'],
-        adminEmail = json['adminEmail'],
-        orari = json['orari'],
-        slot = json['slot'],
-        pitches_number = json['pitches_number'],
-        dbURL = json['dbURL'],
-        maps1 = json['maps1'],
-        maps2 = json['maps2'],
-        address = json['address'],
-        premium = json['premium'],
-        token = json['token'];
+  /// Creates a ClubModel from a Firestore DocumentSnapshot.
+  ClubModel.fromSnapshot(DocumentSnapshot<Map<String, dynamic>> snapshot)
+      : id = snapshot.id,
+        title = snapshot.data()?['title'] ?? '',
+        description = snapshot.data()?['description'] ?? '',
+        image = snapshot.data()?['image'],
+        city = snapshot.data()?['city'] ?? '',
+        adminEmail = snapshot.data()?['adminEmail'] ?? '',
+        orari = Map<String, dynamic>.from(snapshot.data()?['orari'] ?? {}),
+        slot = snapshot.data()?['slot'] ?? 0,
+        pitches_number = snapshot.data()?['pitches_number'] ?? 0,
+        dbURL = snapshot.data()?['dbURL'] ?? '',
+        maps1 = snapshot.data()?['maps1'] ?? 0,
+        maps2 = snapshot.data()?['maps2'] ?? 0,
+        address = snapshot.data()?['address'] ?? '',
+        premium = snapshot.data()?['premium'] ?? false,
+        token = snapshot.data()?['token'] ?? '';
 
-  get imageUrl => null;
-
+  /// Converts the ClubModel into a JSON map for Firestore storage.
   Map<String, dynamic> toJson() {
-    final Map<String, dynamic> data = <String, dynamic>{};
-    data['id'] = id;
-    data['title'] = title;
-    data['description'] = description;
-    data['image'] = image;
-    data['city'] = city;
-    data['adminEmail'] = adminEmail;
-    data['orari'] = orari;
-    data['slot'] = slot;
-    data['pitches_number'] = pitches_number;
-    data['dbURL'] = dbURL;
-    data['maps1'] = maps1;
-    data['maps2'] = maps2;
-    data['address'] = address;
-    data['premium'] = premium;
-    data['token'] = token;
-    return data;
+    return {
+      'id': id,
+      'title': title,
+      'description': description,
+      'image': image,
+      'city': city,
+      'adminEmail': adminEmail,
+      'orari': orari,
+      'slot': slot,
+      'pitches_number': pitches_number,
+      'dbURL': dbURL,
+      'maps1': maps1,
+      'maps2': maps2,
+      'address': address,
+      'premium': premium,
+      'token': token,
+    };
   }
 }

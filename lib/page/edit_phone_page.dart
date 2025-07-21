@@ -10,51 +10,64 @@ import 'package:sports_hub_ios/page/signup_page.dart';
 import 'package:sports_hub_ios/page/verify_phone_page.dart';
 import 'package:sports_hub_ios/utils/constants.dart';
 
+// StatefulWidget per pagina modifica numero telefono
 class EditNumberPage extends StatefulWidget {
   const EditNumberPage(
       {super.key, required this.h, required this.w, required this.size});
 
-  final double h;
-  final double w;
-  final Size size;
+  final double h;   // Altezza schermo
+  final double w;   // Larghezza schermo
+  final Size size;  // Dimensioni schermo
 
   @override
   State<EditNumberPage> createState() => _EditNumberPageState();
 }
 
+// GlobalKey per gestione form e validazione
 final formKey = GlobalKey<FormState>();
+
+// Flag per mostrare loading indicator se necessario
 bool isLoading = false;
 
+// Stato della pagina
 class _EditNumberPageState extends State<EditNumberPage> {
+  // Controller per campo testo numero di telefono
   var phoneNumberController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
+    // Riferimento alla collezione 'User' di Firestore
     CollectionReference user = FirebaseFirestore.instance.collection(('User'));
+
+    // Inizializza controller profilo usando GetX
     final controller = Get.put(ProfileController());
 
     return PopScope(
-        canPop: true,
+        canPop: true, // Permette ritorno indietro
         child: MediaQuery(
+            // Override della scala testo a 1.2 volte
             data: MediaQuery.of(context)
                 .copyWith(textScaler: const TextScaler.linear(1.2)),
             child: Scaffold(
-                appBar: TopBar(),
+                appBar: TopBar(), // Barra superiore personalizzata
                 body: Stack(children: [
                   SingleChildScrollView(
+                      // Permette scroll con tastiera aperta
                       child: Container(
                           margin: const EdgeInsets.only(
                               top: 20, left: 20, right: 20),
+                          // Altezza commentata, eventualmente da abilitare
                           //height: h*0.8,
-                          width: widget.w * 0.95,
+                          width: widget.w * 0.95, // Larghezza 95% dello schermo
                           child: Column(children: [
                             SizedBox(
-                                width: widget.w * 0.8,
+                                width: widget.w * 0.8, // Larghezza 80%
                                 child: Column(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
+                                      // Titolo pagina
                                       Text('Nuovo Numero di Telefono',
                                           textAlign: TextAlign.start,
                                           style: TextStyle(
@@ -63,30 +76,32 @@ class _EditNumberPageState extends State<EditNumberPage> {
                                               fontWeight: FontWeight.bold,
                                               color: Colors.black)),
                                       SizedBox(height: widget.h * 0.01),
+                                      // Campo input per numero di telefono
                                       TextFormField(
-                                        keyboardType: TextInputType.number,
+                                        keyboardType: TextInputType.number, // Solo numeri
                                         controller: phoneNumberController,
                                         style: const TextStyle(
                                             color: Colors.black),
                                         decoration: InputDecoration(
-                                            hintText: '',
+                                            hintText: '', // Nessun placeholder
                                             prefixIcon: const Icon(Icons.phone,
-                                                color: kPrimaryColor),
+                                                color: kPrimaryColor), // Icona telefono
                                             focusedBorder:
                                                 const OutlineInputBorder(
                                                     borderSide: BorderSide(
                                                         color: Colors.black,
-                                                        width: 1.0)),
+                                                        width: 1.0)), // Bordo attivo
                                             enabledBorder:
                                                 const OutlineInputBorder(
                                                     borderSide: BorderSide(
                                                         color: Colors.black,
-                                                        width: 1.0)),
+                                                        width: 1.0)), // Bordo abilitato
                                             border: OutlineInputBorder(
                                                 borderRadius:
                                                     BorderRadius.circular(30))),
                                         autovalidateMode:
-                                            AutovalidateMode.onUserInteraction,
+                                            AutovalidateMode.onUserInteraction, // Valida in tempo reale
+                                        // Validatore: minimo 9 cifre, massimo 11 cifre
                                         validator: (phoneNumber) =>
                                             phoneNumber != null &&
                                                     phoneNumber.length < 9
@@ -97,11 +112,14 @@ class _EditNumberPageState extends State<EditNumberPage> {
                                                     : null,
                                       ),
                                       const SizedBox(height: 20),
+                                      // Recupero dati utente da Firestore per ID primo documento
                                       FutureBuilder<DocumentSnapshot>(
                                           future: user.doc(docIds.first).get(),
                                           builder: (((context, snapshot) {
+                                            // Se la richiesta è completata
                                             if (snapshot.connectionState ==
                                                 ConnectionState.done) {
+                                              // Estraggo dati utente dal documento
                                               Map<String, dynamic> profile =
                                                   snapshot.data!.data()
                                                       as Map<String, dynamic>;
@@ -110,7 +128,7 @@ class _EditNumberPageState extends State<EditNumberPage> {
                                                 child: Container(
                                                   margin: EdgeInsets.symmetric(
                                                       horizontal:
-                                                          widget.w * 0.2),
+                                                          widget.w * 0.2), // Margine orizzontale
                                                   child: ElevatedButton(
                                                     style: ElevatedButton
                                                         .styleFrom(
@@ -123,25 +141,29 @@ class _EditNumberPageState extends State<EditNumberPage> {
                                                           const StadiumBorder(),
                                                     ),
                                                     onPressed: () async {
+                                                      // Recupera tutti i numeri (funzione esterna)
                                                       getAllPhone();
 
+                                                      // Prende il testo inserito, rimuovendo spazi
                                                       String phoneNumber =
                                                           phoneNumberController
                                                               .text
                                                               .trim();
 
                                                       int c = 0;
+                                                      // Ciclo su tutti i numeri recuperati per controllare duplicati
                                                       for (int i = 0;
                                                           i < allPhone.length;
                                                           i++) {
-                                                        //print(allPhone[i].phoneNumber.toString());
+                                                        // Se numero inserito diverso da quello i-esimo
                                                         phoneNumber !=
                                                                 allPhone[i]
                                                                     .phoneNumber
-                                                            ? c++
-                                                            : null;
+                                                            ? c++ // Incrementa contatore
+                                                            : null; // Altrimenti nulla
                                                       }
 
+                                                      // Se numero valido (tra 9 e 11 caratteri)
                                                       if (phoneNumberController
                                                                   .text
                                                                   .trim()
@@ -152,11 +174,13 @@ class _EditNumberPageState extends State<EditNumberPage> {
                                                                   .trim()
                                                                   .length <
                                                               12) {
+                                                        // Usa numero inserito
                                                         phoneNumber =
                                                             phoneNumberController
                                                                 .text
                                                                 .trim();
                                                       } else {
+                                                        // Altrimenti mantiene numero precedente dal profilo
                                                         phoneNumber = profile[
                                                             'phoneNumber'];
                                                       }

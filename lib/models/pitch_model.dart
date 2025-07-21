@@ -17,6 +17,7 @@ class PitchModel {
   int last_hour;
   String club_mail;
 
+  /// Constructor for PitchModel with all required fields
   PitchModel({
     required this.id,
     required this.title,
@@ -33,6 +34,7 @@ class PitchModel {
     required this.club_mail,
   });
 
+  /// Creates a PitchModel instance from a JSON map
   PitchModel.fromJson(Map<String, dynamic> json)
       : id = json['id'] as String,
         title = json['title'] as String,
@@ -48,6 +50,7 @@ class PitchModel {
         last_hour = json['last_hour'] as int,
         club_mail = json['club_mail'] as String;
 
+  /// Creates a PitchModel instance from Firestore document snapshot
   PitchModel.fromSnapshot(DocumentSnapshot<Map<String, dynamic>> json)
       : id = json.id,
         title = json['title'],
@@ -63,8 +66,10 @@ class PitchModel {
         last_hour = json['last_hour'],
         club_mail = json['club_mail'];
 
+  /// Placeholder getter for image URL, currently returns null
   get imageUrl => null;
 
+  /// Converts the PitchModel instance to a JSON map
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
     data['id'] = id;

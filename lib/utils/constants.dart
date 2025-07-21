@@ -287,7 +287,7 @@ AppBar TopBarProfile(double w) {
           Container(
             margin: const EdgeInsets.all(1),
             child: Text(
-              w > 380 ? 'SPORTS HUB                 ' : 'SPORTS HUB       ',
+              w > 380 ? 'SPORTS HUB               ' : 'SPORTS HUB       ',
               style: TextStyle(
                   color: kBackgroundColor,
                   fontWeight: FontWeight.bold,

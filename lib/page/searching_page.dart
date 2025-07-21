@@ -12,22 +12,24 @@ import 'package:sports_hub_ios/utils/constants.dart';
 import 'package:sports_hub_ios/widgets/available_game_card.dart';
 
 class SearchingPage extends StatefulWidget {
-  const SearchingPage(
-      {super.key,
-      required this.city,
-      required this.h,
-      required this.w,
-      required this.ospite});
+  const SearchingPage({
+    super.key,
+    required this.city,
+    required this.h,
+    required this.w,
+    required this.ospite,
+  });
 
-  final String city;
-  final double h;
-  final double w;
-  final bool ospite;
+  final String city; // City used as initial filter
+  final double h; // Screen height
+  final double w; // Screen width
+  final bool ospite; // Guest user flag
 
   @override
   State<SearchingPage> createState() => _SearchingPageState();
 }
 
+// Global form key
 final formKey = GlobalKey<FormState>();
 
 class _SearchingPageState extends State<SearchingPage> {
@@ -44,7 +46,10 @@ class _SearchingPageState extends State<SearchingPage> {
 
   @override
   Widget build(BuildContext context) {
+    // Set selected page on load
     selectedPage = iconList.elementAt(0);
+
+    // Load current user profile from Firestore
     return FutureBuilder<DocumentSnapshot>(
         future: user.doc(documentId).get(),
         builder: (((context, snapshot) {
@@ -56,39 +61,36 @@ class _SearchingPageState extends State<SearchingPage> {
                 data: MediaQuery.of(context)
                     .copyWith(textScaler: const TextScaler.linear(1.2)),
                 child: Scaffold(
-                    //resizeToAvoidBottomInset: false,
                     appBar: TopBar(),
-                    bottomNavigationBar: widget.ospite
-                        ? null
-                        : BottomBar(
-                            context,
-                          ),
+                    bottomNavigationBar:
+                        widget.ospite ? null : BottomBar(context),
                     body: Stack(children: [
                       SingleChildScrollView(
                           controller: scrollController,
                           child: Container(
                               margin: const EdgeInsets.only(
                                   top: 20, left: 20, right: 20),
-                              //height: h*0.8,
                               width: widget.w * 0.95,
                               child: Column(children: [
                                 SizedBox(
                                   width: widget.w * 0.8,
                                   child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
                                       crossAxisAlignment:
                                           CrossAxisAlignment.start,
                                       children: [
+                                        // Search by city title
                                         Text(
-                                            'Cerca i Clubs della tua Città o Provincia',
-                                            textAlign: TextAlign.start,
-                                            style: TextStyle(
-                                                fontSize:
-                                                    widget.w > 380 ? 19 : 16,
-                                                fontWeight: FontWeight.bold,
-                                                color: Colors.black)),
+                                          'Cerca i Clubs della tua Città o Provincia',
+                                          textAlign: TextAlign.start,
+                                          style: TextStyle(
+                                              fontSize:
+                                                  widget.w > 380 ? 19 : 16,
+                                              fontWeight: FontWeight.bold,
+                                              color: Colors.black),
+                                        ),
                                         SizedBox(height: widget.h * 0.01),
+
+                                        // City input field
                                         TextFormField(
                                           inputFormatters: <TextInputFormatter>[
                                             UpperCaseTextFormatter()
@@ -117,6 +119,8 @@ class _SearchingPageState extends State<SearchingPage> {
                                                           30))),
                                         ),
                                         const SizedBox(height: 20),
+
+                                        // Search button to navigate to SearchingPage2
                                         Center(
                                           child: ElevatedButton(
                                             style: ElevatedButton.styleFrom(
@@ -148,26 +152,31 @@ class _SearchingPageState extends State<SearchingPage> {
                                             ),
                                           ),
                                         ),
+
                                         const SizedBox(height: 20),
+
+                                        // Section: display available matches by city
                                         SizedBox(
                                             width: widget.w * 0.8,
                                             child: Column(
-                                              mainAxisAlignment:
-                                                  MainAxisAlignment.start,
                                               crossAxisAlignment:
                                                   CrossAxisAlignment.start,
                                               children: [
-                                                Text('Partite disponibili a ',
-                                                    textAlign: TextAlign.start,
-                                                    style: TextStyle(
-                                                        fontSize: widget.w > 380
-                                                            ? 19
-                                                            : 16,
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                        color: Colors.black)),
+                                                Text(
+                                                  'Partite disponibili a ',
+                                                  textAlign: TextAlign.start,
+                                                  style: TextStyle(
+                                                      fontSize: widget.w > 380
+                                                          ? 19
+                                                          : 16,
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      color: Colors.black),
+                                                ),
                                                 SizedBox(
                                                     height: widget.h * 0.01),
+
+                                                // City selector for viewing available matches
                                                 TextFormField(
                                                   inputFormatters: <TextInputFormatter>[
                                                     UpperCaseTextFormatter()
@@ -203,6 +212,8 @@ class _SearchingPageState extends State<SearchingPage> {
                                                                           30))),
                                                 ),
                                                 const SizedBox(height: 20),
+
+                                                // Button to re-trigger city search and reload page
                                                 Center(
                                                   child: ElevatedButton(
                                                     style: ElevatedButton
@@ -246,67 +257,63 @@ class _SearchingPageState extends State<SearchingPage> {
                                                     ),
                                                   ),
                                                 ),
-                                                const SizedBox(
-                                                  height: 20,
-                                                ),
-                                                SizedBox(
-                                                    height: widget.h * 0.6,
-                                                    child: FirebaseAnimatedList(
-                                                        query: FirebaseDatabase
-                                                                .instanceFor(
-                                                                    app: Firebase
-                                                                        .app(),
-                                                                    databaseURL:
-                                                                        dbCreaMatchURL)
-                                                            .ref()
-                                                            .child(
-                                                                'Prenotazioni')
-                                                            .child('Crea_Match')
-                                                            .child(cityCreate ==
-                                                                    ''
-                                                                ? profile[
-                                                                    'city']
-                                                                : cityCreate)
-                                                            .child('football'),
-                                                        itemBuilder:
-                                                            (BuildContext
-                                                                    context,
-                                                                DataSnapshot
-                                                                    snapshot,
-                                                                Animation<
-                                                                        double>
-                                                                    animation,
-                                                                int index) {
-                                                          Map appointment =
-                                                              snapshot.value
-                                                                  as Map;
-                                                          appointment['key'] =
-                                                              snapshot.key;
+                                                const SizedBox(height: 20),
 
-                                                          return AvailableGameCard(
-                                                              appointment:
-                                                                  appointment,
-                                                              h: widget.h,
-                                                              w: widget.w,
-                                                              context: context,
-                                                              sport: 'football',
-                                                              ospite: false);
-                                                        }))
+                                                // List of available matches from Firebase
+                                                SizedBox(
+                                                  height: widget.h * 0.6,
+                                                  child: FirebaseAnimatedList(
+                                                      query: FirebaseDatabase
+                                                              .instanceFor(
+                                                                  app: Firebase
+                                                                      .app(),
+                                                                  databaseURL:
+                                                                      dbCreaMatchURL)
+                                                          .ref()
+                                                          .child('Prenotazioni')
+                                                          .child('Crea_Match')
+                                                          .child(cityCreate ==
+                                                                  ''
+                                                              ? profile['city']
+                                                              : cityCreate)
+                                                          .child('football'),
+                                                      itemBuilder:
+                                                          (BuildContext context,
+                                                              DataSnapshot
+                                                                  snapshot,
+                                                              Animation<double>
+                                                                  animation,
+                                                              int index) {
+                                                        Map appointment =
+                                                            snapshot.value
+                                                                as Map;
+                                                        appointment['key'] =
+                                                            snapshot.key;
+
+                                                        return AvailableGameCard(
+                                                            appointment:
+                                                                appointment,
+                                                            h: widget.h,
+                                                            w: widget.w,
+                                                            context: context,
+                                                            sport: 'football',
+                                                            ospite: false);
+                                                      }),
+                                                )
                                               ],
                                             )),
-                                        const SizedBox(
-                                          height: 20,
-                                        ),
+                                        const SizedBox(height: 20),
                                       ]),
                                 )
                               ])))
                     ])));
           }
-          return Container();
+          return Container(); // Placeholder while loading
         })));
   }
 }
 
+// Formatter to automatically capitalize the first letter of city input
 class UpperCaseTextFormatter extends TextInputFormatter {
   @override
   TextEditingValue formatEditUpdate(
@@ -318,6 +325,7 @@ class UpperCaseTextFormatter extends TextInputFormatter {
   }
 }
 
+// Capitalizes the first letter of the string
 String capitalize(String value) {
   if (value.trim().isEmpty) return "";
   return "${value[0].toUpperCase()}${value.substring(1).toLowerCase()}";

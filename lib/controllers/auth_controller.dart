@@ -1,9 +1,7 @@
 import 'dart:async';
 import 'package:cloud_firestore/cloud_firestore.dart';
-
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
-//import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -15,13 +13,13 @@ import 'package:sports_hub_ios/page/login_page.dart';
 import 'package:sports_hub_ios/page/signup_page.dart';
 import 'package:sports_hub_ios/page/start_page.dart';
 import 'package:sports_hub_ios/page/verify_email_page.dart';
-import 'package:sports_hub_ios/page/verify_phone_page.dart';
 import 'package:sports_hub_ios/page/verify_phone_page_start.dart';
 import 'package:sports_hub_ios/utils/constants.dart';
 
 class AuthController extends GetxController {
   static AuthController instance = Get.find();
   static ProfileController profile = Get.find();
+
   Rx<User?>? firebaseUser;
   final auth = FirebaseAuth.instance;
   bool isEmailVerified = false;
@@ -32,6 +30,7 @@ class AuthController extends GetxController {
   late Stream<User?> _authStateChanges;
   final user = FirebaseAuth.instance.currentUser;
 
+  /// Initialize Firebase Auth and set up listener for auth state changes
   void initAuth() async {
     await Future.delayed(const Duration(seconds: 2));
     _auth = FirebaseAuth.instance;
@@ -41,23 +40,23 @@ class AuthController extends GetxController {
     });
   }
 
+  /// Bind auth state to `firebaseUser` observable and handle navigation on changes
   @override
   void onReady() {
     super.onReady();
+
     if (user != null) {
       getDocId();
       getToken();
-    } 
+    }
     firebaseUser = Rx<User?>(user);
     firebaseUser?.bindStream(auth.userChanges());
     ever(firebaseUser!, _initialScreen);
   }
 
-  _initialScreen(
-    User? user,
-  ) {
+  /// Direct user to proper screen based on authentication and verification status
+  _initialScreen(User? user) {
     if (user == null) {
-      print("login page");
       Get.offAll(() => const StartPage());
     } else {
       user.emailVerified
@@ -68,15 +67,16 @@ class AuthController extends GetxController {
     }
   }
 
+  /// Retrieve FCM token and call function to save it in Firestore
   void getToken() async {
     await FirebaseMessaging.instance.getToken().then((token) {
       mtoken = token!;
       print('My token is $mtoken');
-
       saveToken(token);
     });
   }
 
+  /// Store user's FCM token into their Firestore document
   void saveToken(String token) async {
     await FirebaseFirestore.instance
         .collection('User')
@@ -84,9 +84,9 @@ class AuthController extends GetxController {
         .update({'token': token});
   }
 
+  /// Request notification permissions from the user
   void requestPermission() async {
     FirebaseMessaging messaging = FirebaseMessaging.instance;
-
     NotificationSettings settings = await messaging.requestPermission(
       alert: true,
       announcement: false,
@@ -96,7 +96,6 @@ class AuthController extends GetxController {
       provisional: false,
       sound: false,
     );
-
     if (settings.authorizationStatus == AuthorizationStatus.authorized) {
       print('User granted permissions');
     } else if (settings.authorizationStatus ==
@@ -107,6 +106,7 @@ class AuthController extends GetxController {
     }
   }
 
+  /// Retrieve Firestore document IDs for the current authenticated user
   Future getDocId() async {
     String email = FirebaseAuth.instance.currentUser!.email.toString();
     await FirebaseFirestore.instance
@@ -119,8 +119,7 @@ class AuthController extends GetxController {
             }));
   }
 
-  //email: user.email.toString()
-
+  /// Sign up user with email/password, then create their profile in Firestore
   void signUp(String email, password, username, phone, city, w) async {
     try {
       await auth.createUserWithEmailAndPassword(
@@ -128,9 +127,9 @@ class AuthController extends GetxController {
 
       final fireUser = FirebaseAuth.instance.currentUser!;
       String firePhotoProfile =
-          "https://firebasestorage.googleapis.com/v0/b/sports-hub-2710.appspot.com/o/utility_images%2Ffootballer.png?alt=media&token=9339bbc1-047c-4309-9509-9d643554daca";
+          "https://...footballer.png";
       String firePhotoCover =
-          "https://firebasestorage.googleapis.com/v0/b/sports-hub-2710.appspot.com/o/utility_images%2Fstadium_black.jpg?alt=media&token=ac177528-62f5-4c35-a823-78d106364583";
+          "https://...stadium_black.jpg";
 
       final user = UserModel(
         id: fireUser.uid,
@@ -251,6 +250,7 @@ class AuthController extends GetxController {
     isLoadingS = false;
   }
 
+  /// Create a new user document in Firestore using the provided UserModel
   Future<void> createUser(UserModel user) async {
     await FirebaseFirestore.instance.collection("User").doc(user.email).set({
       "id": user.id,
@@ -274,6 +274,7 @@ class AuthController extends GetxController {
     });
   }
 
+  /// Store verified phone user data into Firestore collection "Phone"
   Future<void> createPhoneVerified(Map user) async {
     await FirebaseFirestore.instance
         .collection("Phone")
@@ -288,6 +289,7 @@ class AuthController extends GetxController {
     });
   }
 
+  /// Add a deletion request entry for a user in Firestore
   Future<void> createDeleteRequest(Map user) async {
     await FirebaseFirestore.instance
         .collection("Delete")
@@ -302,6 +304,7 @@ class AuthController extends GetxController {
     });
   }
 
+  /// Update user profile information in Firestore (include isEmailVerified=true)
   Future<void> updateUser(UserModel user) async {
     await FirebaseFirestore.instance.collection("User").doc(user.email).update({
       "id": user.id,
@@ -315,6 +318,7 @@ class AuthController extends GetxController {
     });
   }
 
+  /// Create a new appointment document under the specified user's sub-collection
   Future<void> createAppointment(
       String user, AppointmentModel appointment) async {
     await FirebaseFirestore.instance
@@ -335,6 +339,7 @@ class AuthController extends GetxController {
     });
   }
 
+  /// Update existing appointment by adding a new player and incrementing counter
   Future<void> updateAppointment(
       String user, AppointmentModel appointment, String newPlayer) async {
     int count = appointment.playerCount + 1;
@@ -343,7 +348,7 @@ class AuthController extends GetxController {
         .doc(user)
         .collection('Appointment')
         .doc(
-            "${appointment.club}-${appointment.month}-${appointment.day}-${appointment.time}")
+            "${appointment.club}-${appointment.month}-${appointment.day}${appointment.time}")
         .set({
       "player": user,
       "club": appointment.club,
@@ -368,6 +373,7 @@ class AuthController extends GetxController {
     });
   }
 
+  /// Sign in using Google and save user profile information to Firestore
   Future<void> signInWithGoogle() async {
     final GoogleSignIn googleSignIn = GoogleSignIn();
 
@@ -398,6 +404,7 @@ class AuthController extends GetxController {
     }
   }
 
+  /// Store Google account information in Firestore collection "Google users"
   Future<void> saveUser(GoogleSignInAccount account) async {
     FirebaseFirestore.instance
         .collection("Google users")
@@ -409,90 +416,77 @@ class AuthController extends GetxController {
     });
   }
 
+  /// Authenticate with email/password and update profile upon success
   void login(String email, password, context, w) async {
     final controller = Get.put(ProfileController());
     await auth
         .signInWithEmailAndPassword(email: email, password: password)
-        //.whenComplete(() => Get.snackbar("OK", "login effettuato con $email.",
-        //              snackPosition: SnackPosition.TOP,
-        //              backgroundColor: kPrimaryColor.withOpacity(0.2),
-        //              colorText: kPrimaryColor),
-        //              )
         .catchError((error, StackTrace) {
-      Get.snackbar('', "",
-          snackPosition: SnackPosition.TOP,
-          titleText: Text(
-            'Accesso non riuscito',
-            style: TextStyle(
-              fontWeight: FontWeight.w800,
-              letterSpacing: 1,
-              fontSize: w < 380
-                  ? 13
-                  : w > 605
-                      ? 18
-                      : 15,
-              color: Colors.black,
-            ),
-          ),
-          messageText: Text(
-            'credenziali errate',
-            style: TextStyle(
-              fontWeight: FontWeight.w800,
-              letterSpacing: 1,
-              fontSize: w < 380
-                  ? 13
-                  : w > 605
-                      ? 18
-                      : 15,
-              color: Colors.black,
-            ),
-          ),
-          duration: const Duration(seconds: 4),
-          backgroundColor: Colors.redAccent.withOpacity(0.6),
-          colorText: Colors.black);
+          Get.snackbar('', "",
+              snackPosition: SnackPosition.TOP,
+              titleText: Text(
+                'Accesso non riuscito',
+                style: TextStyle(
+                  fontWeight: FontWeight.w800,
+                  letterSpacing: 1,
+                  fontSize: w < 380
+                      ? 13
+                      : w > 605
+                          ? 18
+                          : 15,
+                  color: Colors.black,
+                ),
+              ),
+              messageText: Text(
+                'credenziali errate',
+                style: TextStyle(
+                  fontWeight: FontWeight.w800,
+                  letterSpacing: 1,
+                  fontSize: w < 380
+                      ? 13
+                      : w > 605
+                          ? 18
+                          : 15,
+                  color: Colors.black,
+                ),
+              ),
+              duration: const Duration(seconds: 4),
+              backgroundColor: Colors.redAccent.withOpacity(0.6),
+              colorText: Colors.black);
 
-      print(error.toString());
-      Navigator.push(
-          context, MaterialPageRoute(builder: (context) => const LoginPage()));
-      return error;
-    }).whenComplete(() async {
-      isLoading = false;
-
-      final snapshot = await FirebaseFirestore.instance
-          .collection("User")
-          .where('email' == email)
-          .get();
-      final userData =
-          snapshot.docs.map((e) => UserModel.fromSnapshot(e)).single;
-
-      final user = UserModel(
-        id: userData.id,
-        email: userData.email,
-        phoneNumber: userData.phoneNumber,
-        password: password,
-        username: userData.username,
-        city: userData.city,
-        profile_pic: userData.profile_pic,
-        cover_pic: userData.cover_pic,
-        isEmailVerified: true,
-        games: userData.games,
-        goals: userData.goals,
-        win: userData.win,
-        games_tennis: userData.games_tennis,
-        set_vinti: userData.set_vinti,
-        win_tennis: userData.win_tennis,
-        prenotazioni: userData.prenotazioni,
-        prenotazioniPremium: userData.prenotazioniPremium,
-        token: userData.token,
-      );
-
-      await controller.updateUser(user);
-
-      //await FirebaseFirestore.instance.collection("User").doc(user.email).update(user.toJson());
-      //profile.updateUser(user);
-      //AuthController.instance.updateUser(user);
-    });
-
-    //OneSignal.login(user.id);
+          print(error.toString());
+          Navigator.push(
+              context, MaterialPageRoute(builder: (context) => const LoginPage()));
+          return error;
+        })
+        .whenComplete(() async {
+          isLoading = false;
+          final snapshot = await FirebaseFirestore.instance
+              .collection("User")
+              .where('email' == email)
+              .get();
+          final userData = snapshot.docs.map((e) => UserModel.fromSnapshot(e)).single;
+          final user = UserModel(
+            id: userData.id,
+            email: userData.email,
+            phoneNumber: userData.phoneNumber,
+            password: password,
+            username: userData.username,
+            city: userData.city,
+            profile_pic: userData.profile_pic,
+            cover_pic: userData.cover_pic,
+            isEmailVerified: true,
+            games: userData.games,
+            goals: userData.goals,
+            win: userData.win,
+            games_tennis: userData.games_tennis,
+            set_vinti: userData.set_vinti,
+            win_tennis: userData.win_tennis,
+            prenotazioni: userData.prenotazioni,
+            prenotazioniPremium: userData.prenotazioniPremium,
+            token: userData.token,
+          );
+          await controller.updateUser(user);
+        });
   }
 }

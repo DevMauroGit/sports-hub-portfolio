@@ -14,6 +14,7 @@ import 'package:sports_hub_ios/widgets/Admin/table_appointment.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class AdminPageScreen extends StatefulWidget {
+  // Receives admin club data and the initially selected day
   final Map adminClub;
   final DateTime daySelected;
 
@@ -24,22 +25,30 @@ class AdminPageScreen extends StatefulWidget {
   State<AdminPageScreen> createState() => _AdminPageScreenState();
 }
 
+// Scroll controller for managing scrolling in the page
 ScrollController scrollController = ScrollController();
 
 class _AdminPageScreenState extends State<AdminPageScreen> {
+  // State to track if a time slot has been selected
   late bool _timeSelected;
+
+  // Today's date initialized with current date/time
   DateTime today = DateTime.now();
+
+  // Variables to store selected time information
   String time = 'no time';
   String hour = 'no time';
   int min = 0;
 
+  // Handler for when a new calendar day is selected
   void _onDaySelected(
     DateTime day,
     DateTime focusDay,
   ) {
     setState(() {
-      today = day;
-      _timeSelected = true;
+      today = day; // Update selected day
+      _timeSelected = true; // Mark time as selected
+      // Navigate to AdminPage with the newly selected day
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => AdminPage(day: today)),
@@ -47,6 +56,7 @@ class _AdminPageScreenState extends State<AdminPageScreen> {
     });
   }
 
+  // Handler for when a time slot is selected from UI components
   void _onTimeSelected(String slot, String hours, int minutes) {
     setState(() {
       time = slot;
@@ -57,37 +67,39 @@ class _AdminPageScreenState extends State<AdminPageScreen> {
 
   @override
   void initState() {
-    //setState(() {
-    //  clubController = Get.put(ClubController());
-    //  Get.lazyPut(()=>FirebaseStorageService());
-    //});
-
+    // Initialization code (commented out for now)
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
+    // Get screen dimensions for responsive UI sizing
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
     Size size = MediaQuery.of(context).size;
 
+    // Format month string with leading zero if needed
     String data = "";
     if (widget.daySelected.month < 10) {
       setState(() {
         data = "0";
       });
     }
+
+    // Compose string with month number and month name for display
     final getMonth =
         "$data${widget.daySelected.month}_${DateConverted.getMonth(widget.daySelected.month)}";
-    //print(time);
-    initializeDateFormatting('it');
-    //Size size = MediaQuery.of(context).size;
 
+    // Initialize date formatting localization for Italian
+    initializeDateFormatting('it');
+
+    // Main scrollable content of the admin page
     return SingleChildScrollView(
         controller: scrollController,
         child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
+              // Top header section with club title and logo
               Container(
                   margin: const EdgeInsets.only(bottom: kDefaultPadding * 2.5),
                   height: size.height * 0.24,
@@ -97,7 +109,6 @@ class _AdminPageScreenState extends State<AdminPageScreen> {
                         children: [
                           Container(
                             padding: const EdgeInsets.only(
-                                //  top: kDefaultPadding - 20,
                                 left: kDefaultPadding + 10,
                                 right: kDefaultPadding + 10,
                                 bottom: kDefaultPadding),
@@ -116,6 +127,7 @@ class _AdminPageScreenState extends State<AdminPageScreen> {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceEvenly,
                                   children: <Widget>[
+                                    // Display main app title with styling
                                     Text(
                                       'SPORTS HUB',
                                       style: Theme.of(context)
@@ -130,6 +142,7 @@ class _AdminPageScreenState extends State<AdminPageScreen> {
                                       textAlign: TextAlign.center,
                                     ),
                                     const Spacer(),
+                                    // Display club logo image
                                     Image.asset(
                                       "assets/images/Sport_hub_logo_1.png",
                                       height: size.width > 380 ? 80 : 60,
@@ -142,6 +155,7 @@ class _AdminPageScreenState extends State<AdminPageScreen> {
                           ),
                         ],
                       ),
+                      // Positioned container for the club title banner at the bottom of the header
                       Positioned(
                         bottom: 0,
                         left: 0,
@@ -163,6 +177,7 @@ class _AdminPageScreenState extends State<AdminPageScreen> {
                                   color: kSecondaryColor),
                             ],
                           ),
+                          // Display the title of the admin club
                           child: Text(widget.adminClub['title'],
                               style: TextStyle(
                                   fontWeight: FontWeight.bold,
@@ -172,12 +187,13 @@ class _AdminPageScreenState extends State<AdminPageScreen> {
                       )
                     ],
                   )),
+              // Calendar widget allowing the admin to select days
               TableCalendar(
                 locale: "it",
-                weekendDays: [],
+                weekendDays: [], // No weekend days highlighted
                 headerStyle: HeaderStyle(
-                    formatButtonVisible: false,
-                    titleCentered: true,
+                    formatButtonVisible: false, // Hide format toggle button
+                    titleCentered: true, // Center the month title
                     titleTextStyle: TextStyle(
                         fontSize: w > 380 ? 23 : 18,
                         color: Colors.black,
@@ -195,28 +211,36 @@ class _AdminPageScreenState extends State<AdminPageScreen> {
                         fontWeight: FontWeight.w600,
                         color: Colors.black,
                         fontSize: w > 380 ? 18 : 14)),
-                selectedDayPredicate: (day) =>
-                    isSameDay(day, widget.daySelected),
+                selectedDayPredicate: (day) => isSameDay(
+                    day, widget.daySelected), // Highlight selected day
                 startingDayOfWeek: StartingDayOfWeek.monday,
-                focusedDay: today,
+                focusedDay: today, // Current focused day
                 firstDay: DateTime.utc(
-                    DateTime.now().year, DateTime.now().month - 1, 1),
+                    DateTime.now().year,
+                    DateTime.now().month - 1,
+                    1), // Limit calendar to last month
                 lastDay: DateTime.utc(
-                    DateTime.now().year, DateTime.now().month + 1, 31),
-                onDaySelected: _onDaySelected,
+                    DateTime.now().year,
+                    DateTime.now().month + 1,
+                    31), // Limit calendar to next month
+                onDaySelected: _onDaySelected, // Handle day selection
               ),
               SizedBox(height: h * 0.02),
+              // Row containing pitch column and appointments table side-by-side
               Row(
                 children: [
+                  // Widget displaying pitch details for the selected day
                   PitchColumn(
                     daySelected: widget.daySelected,
                     pitches_number: widget.adminClub['pitches_number'],
                   ),
+                  // Widget displaying scheduled appointments for the day and club
                   TableAppointment(
                       daySelected: widget.daySelected, club: widget.adminClub),
                 ],
               ),
               SizedBox(height: h * 0.03),
+              // Logout button centered at the bottom of the page
               Center(
                 child: Container(
                   margin: EdgeInsets.symmetric(horizontal: w * 0.35),
@@ -232,6 +256,7 @@ class _AdminPageScreenState extends State<AdminPageScreen> {
                         fontWeight: FontWeight.bold),
                     color: kPrimaryColor,
                     pressEvent: () {
+                      // Show confirmation dialog before logging out
                       AwesomeDialog(
                               context: context,
                               dialogType: DialogType.warning,
@@ -248,6 +273,7 @@ class _AdminPageScreenState extends State<AdminPageScreen> {
                                   fontSize: w > 380 ? 20 : 18,
                                   fontWeight: FontWeight.w700),
                               btnOkOnPress: () async {
+                                // Sign out user and close the app after short delay
                                 FirebaseAuth.instance.signOut();
                                 Future.delayed(Duration(milliseconds: 600))
                                     .then((value) => SystemChannels.platform
@@ -265,5 +291,3 @@ class _AdminPageScreenState extends State<AdminPageScreen> {
             ]));
   }
 }
-
-//cambiato future con streambuilder

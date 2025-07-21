@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_close_app/flutter_close_app.dart';
 import 'package:get/get.dart';
 import 'package:cached_network_image/cached_network_image.dart';
+import 'package:go_router/go_router.dart';
 import 'package:sports_hub_ios/controllers/auth_controller.dart';
 import 'package:sports_hub_ios/controllers/games_controller.dart';
 import 'package:sports_hub_ios/controllers/user_controller.dart';
@@ -175,10 +176,10 @@ class _ProfilePageState extends State<ProfilePage> {
                           textAlign: TextAlign.start,
                           style: TextStyle(
                               fontSize: w > 605
-                                        ? 25
-                                        : w > 385
-                                            ? 18
-                                            : 14,
+                                  ? 25
+                                  : w > 385
+                                      ? 18
+                                      : 14,
                               color: Colors.black,
                               fontWeight: FontWeight.bold)),
                     ),
@@ -425,12 +426,11 @@ class _ProfilePageState extends State<ProfilePage> {
                               const BorderRadius.all(Radius.circular(5))),
                       child: GestureDetector(
                           onTap: () {
-                            Navigator.of(context).pushReplacement(
-                                MaterialPageRoute(
-                                    builder: (context) => ProfilePage(
-                                        docIds: profile,
-                                        avviso: false,
-                                        sport: 'football')));
+                            context.go('/profile', extra: {
+                              'docIds': widget.docIds,
+                              'avviso': false,
+                              'sport': 'football'
+                            });
                           },
                           child: Icon(
                             Icons.sports_soccer,
@@ -455,11 +455,11 @@ class _ProfilePageState extends State<ProfilePage> {
                   GestureDetector(
                       behavior: HitTestBehavior.deferToChild,
                       onTap: () {
-                        Navigator.of(context).pushReplacement(MaterialPageRoute(
-                            builder: (context) => ProfilePage(
-                                docIds: profile,
-                                avviso: false,
-                                sport: 'tennis')));
+                        context.go('/profile', extra: {
+                          'docIds': widget.docIds,
+                          'avviso': false,
+                          'sport': 'tennis'
+                        });
                       },
                       child: Container(
                           decoration: BoxDecoration(
@@ -643,10 +643,8 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget buildCreateGameManagement(h, w, profile, gameController) =>
       GestureDetector(
         onTap: () {
-          Get.to(
-              () => FootballCreateManagementPage(
-                  profile: profile, gameController: gameController),
-              transition: Transition.fadeIn);
+          context.go('/create-management',
+              extra: {'profile': profile, 'gameController': gameController});
         },
         child: Center(
           child: Container(
@@ -672,6 +670,7 @@ class _ProfilePageState extends State<ProfilePage> {
         ),
       );
 
+  // Builds the "Create Tennis Game" button with a background image and navigation to the creation page.
   Widget buildCreateTennisGameManagement(h, w, profile, gameController) =>
       GestureDetector(
         onTap: () {
@@ -705,6 +704,7 @@ class _ProfilePageState extends State<ProfilePage> {
         ),
       );
 
+// Loads and displays football statistics using Firestore data.
   Widget buildFootballStatsWidget(String profile) =>
       FutureBuilder<DocumentSnapshot>(
           future: user.doc(profile).get(),
@@ -722,6 +722,7 @@ class _ProfilePageState extends State<ProfilePage> {
             );
           })));
 
+// Loads and displays tennis statistics using Firestore data.
   Widget buildTennisStatsWidget(String profile) =>
       FutureBuilder<DocumentSnapshot>(
           future: user.doc(profile).get(),
@@ -740,6 +741,7 @@ class _ProfilePageState extends State<ProfilePage> {
           })));
 }
 
+// Displays the user's username fetched from Firestore with responsive text style.
 class GetUserName extends StatelessWidget {
   final String documentId;
 
@@ -782,6 +784,7 @@ class GetUserName extends StatelessWidget {
   }
 }
 
+// Basic navigation drawer layout containing the header and menu items.
 class NavigationDrawer extends StatelessWidget {
   const NavigationDrawer({
     super.key,
@@ -803,6 +806,7 @@ class NavigationDrawer extends StatelessWidget {
   }
 }
 
+// Icon that navigates to the Friends page with filtered Firestore friend data.
 class FriendsIcon extends StatelessWidget {
   const FriendsIcon({
     super.key,
@@ -840,6 +844,7 @@ class FriendsIcon extends StatelessWidget {
   }
 }
 
+// Icon that navigates directly to the user's football profile page.
 class FriendsIcon2 extends StatelessWidget {
   const FriendsIcon2({
     super.key,

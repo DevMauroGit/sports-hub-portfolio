@@ -6,6 +6,7 @@ import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:firebase_database/ui/firebase_animated_list.dart';
+import 'package:go_router/go_router.dart';
 import 'package:sports_hub_ios/page/football_results_page.dart';
 import 'package:sports_hub_ios/page/profile_page.dart';
 import 'package:sports_hub_ios/page/tennis_result_page.dart';
@@ -295,17 +296,15 @@ Widget AppointmentCreateCard(
                                   //            '2024-${appointment['meseN']}-${appointment['dayN']} ${appointment['hour']}:00:00')
                                   //      .isBefore(DateTime.now()) ?
                                   sport == 'football'
-                                      ? Get.to(
-                                          () => FootballResultsPage(
-                                                appointment: appointment,
-                                                create: true,
-                                              ),
-                                          transition: Transition.fadeIn)
-                                      : Get.to(
-                                          () => TennisResultsPage(
-                                                appointment: appointment,
-                                              ),
-                                          transition: Transition.fadeIn)
+                                      ? GoRouter.of(context).go('/football-results', extra: {
+                                        'appointment': appointment,
+                                        })
+                                      
+                                      
+                                      : GoRouter.of(context).go('/tennis-results', extra: {
+                                        'appointment': appointment,
+                                        })
+                                      
                                   : Get.snackbar('', "",
                                       snackPosition: SnackPosition.TOP,
                                       titleText: Text(

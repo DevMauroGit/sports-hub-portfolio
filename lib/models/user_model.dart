@@ -1,25 +1,26 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
 class UserModel {
-  final String id;
-  String username;
-  final String email;
-  final String phoneNumber;
-  final String city;
-  final String password;
-  String? profile_pic;
-  String? cover_pic;
-  bool isEmailVerified;
-  int games;
-  int goals;
-  int win;
-  int games_tennis;
-  int set_vinti;
-  int win_tennis;
-  int prenotazioni;
-  int prenotazioniPremium;
-  String token;
+  final String id;                // Unique user ID
+  String username;                // Username of the user
+  final String email;             // User's email
+  final String phoneNumber;       // User's phone number
+  final String city;              // City where the user lives
+  final String password;          // User's password
+  String? profile_pic;            // Optional profile picture URL
+  String? cover_pic;              // Optional cover picture URL
+  bool isEmailVerified;           // Email verification status
+  int games;                     // Number of games played
+  int goals;                     // Number of goals scored
+  int win;                       // Number of wins
+  int games_tennis;              // Number of tennis games played
+  int set_vinti;                 // Number of tennis sets won
+  int win_tennis;                // Number of tennis matches won
+  int prenotazioni;              // Number of bookings made
+  int prenotazioniPremium;       // Number of premium bookings made
+  String token;                  // User authentication token
 
+  /// Constructor requiring all fields to create a UserModel instance
   UserModel({
     required this.username,
     required this.id,
@@ -41,6 +42,7 @@ class UserModel {
     required this.token,
   });
 
+  /// Create a UserModel instance from a JSON map (e.g., from API or Firestore)
   UserModel.fromJson(Map<String, dynamic> json)
       : username = json['username'] as String,
         id = json['id'] as String,
@@ -51,7 +53,7 @@ class UserModel {
         profile_pic = json['profile_pic'] as String,
         cover_pic = json['cover_pic'] as String,
         isEmailVerified = json['isEmailVerified'],
-        games = json['isEmailVerified'] as int,
+        games = json['games'] as int,            // Corrected from json['isEmailVerified'] to json['games']
         goals = json['goals'] as int,
         win = json['win'] as int,
         games_tennis = json['games_tennis'] as int,
@@ -61,6 +63,7 @@ class UserModel {
         prenotazioniPremium = json['prenotazioniPremium'] as int,
         token = json['token'] as String;
 
+  /// Create a UserModel instance from a Firestore DocumentSnapshot
   UserModel.fromSnapshot(DocumentSnapshot<Map<String, dynamic>> json)
       : username = json['username'],
         id = json['id'],
@@ -81,6 +84,7 @@ class UserModel {
         prenotazioniPremium = json['prenotazioniPremium'],
         token = json['token'];
 
+  /// Convert the UserModel instance into a JSON map (for saving/updating)
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
     data['id'] = id;

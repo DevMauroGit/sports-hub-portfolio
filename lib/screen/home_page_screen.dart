@@ -3,7 +3,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 import 'package:sports_hub_ios/controllers/club_controller.dart';
+import 'package:sports_hub_ios/cubit/auth_cubit.dart';
 import 'package:sports_hub_ios/firebase_storage/firebase_storage_service.dart';
 import 'package:sports_hub_ios/hero_dialogue/hero_dialogue_route.dart';
 import 'package:sports_hub_ios/page/profile_page.dart';
@@ -202,12 +204,12 @@ class _HomePageScreenState extends State<HomePageScreen> {
                   ),
                   GestureDetector(
                     onTap: () {
-                      Get.to(
-                          () => ProfilePage(
-                              docIds: widget.user['email'],
-                              avviso: false,
-                              sport: 'football'),
-                          transition: Transition.fadeIn);
+                      context.go('/profile', extra: {
+                        'docIds': widget.user['email'],
+                              'avviso': false,
+                              'sport': 'football'
+                      });
+                      
                     },
                     child: Center(
                       child: Container(

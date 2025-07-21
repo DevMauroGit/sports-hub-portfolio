@@ -15,13 +15,18 @@ class _AppCubitLogicsState extends State<AppCubitLogics> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: BlocBuilder<AppCubits, CubitStates>(builder: ((context, state) {
-        if (state is WelcomeState) {
-          return const LoadingScreen();
-        } else {
-          return const LoadingScreen();
-        }
-      })),
+      // Use BlocBuilder to rebuild UI in response to state changes in AppCubits
+      body: BlocBuilder<AppCubits, CubitStates>(
+        builder: (context, state) {
+          if (state is WelcomeState) {
+            // Show loading screen on WelcomeState
+            return const LoadingScreen();
+          } else {
+            // Fallback UI, currently also loading screen
+            return const LoadingScreen();
+          }
+        },
+      ),
     );
   }
 }

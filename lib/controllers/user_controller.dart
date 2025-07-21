@@ -6,8 +6,10 @@ import 'package:sports_hub_ios/models/game_model.dart';
 import 'package:sports_hub_ios/models/user_model.dart';
 
 class UserController extends GetxController {
+  // Singleton instance for easy access
   static UserController get instance => Get.find();
 
+  // Observable lists to hold users, friends, teammates, requests and games
   final allUsers = <UserModel>[].obs;
   final allFriends = <FriendModel>[].obs;
   final allFriendsData = <UserModel>[].obs;
@@ -18,24 +20,21 @@ class UserController extends GetxController {
   final _db = FirebaseFirestore.instance;
   final lista = <UserModel>[];
 
+  // Current authenticated user from FirebaseAuth
   final user = FirebaseAuth.instance.currentUser;
 
-  // @override
-  // void onReady(){
-  //   getAllUsers();
-  //   super.onReady();
-  // }
   @override
   void onReady() {
+    // If user is logged in, load friends, teammates and requests
     if(user != null) {
       getAllFriends().then((value) => getFriendsData());
       getAllTeammate();
       getAllRequests();
     }
-    
     super.onReady();
   }
 
+  /// Fetch all friends where 'isRequested' is false
   Future<void> getAllFriends() async {
     String email = FirebaseAuth.instance.currentUser!.email.toString();
     try {
@@ -53,6 +52,7 @@ class UserController extends GetxController {
     } catch (e) {}
   }
 
+  /// Fetch detailed user data for all friends
   Future<void> getFriendsData() async {
     allFriendsData.clear();
     lista.clear();
@@ -69,6 +69,7 @@ class UserController extends GetxController {
             .map((friends) => UserModel.fromSnapshot(friends))
             .elementAt(i);
 
+        // Check to avoid duplicates in the list
         if (lista.isEmpty) {
           lista.add(friend);
         } else {
@@ -86,6 +87,7 @@ class UserController extends GetxController {
     allFriendsData.assignAll(lista);
   }
 
+  /// Fetch all teammates (friends with 'isRequested' = false)
   Future<void> getAllTeammate() async {
     String email = FirebaseAuth.instance.currentUser!.email.toString();
     try {
@@ -103,6 +105,7 @@ class UserController extends GetxController {
     } catch (e) {}
   }
 
+  /// Fetch all friend requests where 'isRequested' is true
   Future<void> getAllRequests() async {
     allRequest.clear();
     String email = FirebaseAuth.instance.currentUser!.email.toString();
@@ -121,6 +124,7 @@ class UserController extends GetxController {
     } catch (e) {}
   }
 
+  /// Search users by username
   Future<void> getAllUsers(name) async {
     try {
       QuerySnapshot<Map<String, dynamic>> data = await FirebaseFirestore
@@ -135,6 +139,7 @@ class UserController extends GetxController {
     } catch (e) {}
   }
 
+  /// Get detailed user info by email
   Future<UserModel> getUserDetails(String email) async {
     final snapshot =
         await _db.collection("User").where("Email", isEqualTo: email).get();
@@ -142,6 +147,7 @@ class UserController extends GetxController {
     return userData;
   }
 
+  /// Get all users
   Future<List<UserModel>> allUser() async {
     final snapshot = await _db.collection("User").get();
     final userData =
@@ -149,6 +155,7 @@ class UserController extends GetxController {
     return userData;
   }
 
+  /// Get users by name (alternative method)
   Future<List<UserModel>> gatAllUsers(name) async {
     final snapshot =
         await _db.collection("User").where('name', isEqualTo: name).get();
@@ -157,13 +164,14 @@ class UserController extends GetxController {
     return userData;
   }
 
+  /// Update user data in Firestore
   Future<void> updateUser(UserModel user) async {
     await _db.collection("User").doc(user.email).update(user.toJson());
   }
 
+  /// Update friends data for both users
   Future<void> updateUserFriends(
       FriendModel user, FriendModel userFriend) async {
-    //FriendModel user = FriendModel(username: username, id: id, email: email, phoneNo: phoneNo, password: password, profile_pic: profile_pic, cover_pic: cover_pic, isEmailVerified: isEmailVerified, isRequested: isRequested)
     await FirebaseFirestore.instance
         .collection("User")
         .doc(userFriend.email)
@@ -178,6 +186,7 @@ class UserController extends GetxController {
         .set(userFriend.toJson());
   }
 
+  /// Send a game record to a friend
   Future<void> sendGameToFriend(
       String userFriend,
       String host,
@@ -196,15 +205,15 @@ class UserController extends GetxController {
     String finale = '';
     if (totTeam1 > totTeam2) {
       if (team == 1) {
-        finale = 'VITTORIA';
+        finale = 'VITTORIA'; // Victory
       } else if (team == 2) {
-        finale = 'SCONFITTA';
+        finale = 'SCONFITTA'; // Defeat
       }
     } else if (totTeam1 < totTeam2) {
       if (team == 1) {
-        finale = 'SCONFITTA';
+        finale = 'SCONFITTA'; // Defeat
       } else if (team == 2) {
-        finale = 'VITTORIA';
+        finale = 'VITTORIA'; // Victory
       }
     }
     GameModel game = GameModel(
@@ -222,7 +231,8 @@ class UserController extends GetxController {
         giorno: giorno,
         dbURL: dbURL,
         crea_match: crea_match);
-    //FriendModel user = FriendModel(username: username, id: id, email: email, phoneNo: phoneNo, password: password, profile_pic: profile_pic, cover_pic: cover_pic, isEmailVerified: isEmailVerified, isRequested: isRequested)
+
+    // Save the game record in friend's subcollection
     await FirebaseFirestore.instance
         .collection("User")
         .doc(userFriend)

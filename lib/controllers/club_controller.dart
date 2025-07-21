@@ -9,26 +9,35 @@ class ClubController extends GetxController {
 
   @override
   void onReady() {
+    // Called when the controller is ready
     getAllClubs();
     super.onReady();
   }
 
+  /// Fetch all clubs from Firestore and load their image URLs from Firebase Storage
   Future<void> getAllClubs() async {
-    //  List<String> imgName = ["campo4.jpg","campo7.jpg","campo8.jpg"];
     try {
+      // Fetch data from Firestore collection 'Clubs'
       QuerySnapshot<Map<String, dynamic>> data =
           await FirebaseFirestore.instance.collection('Clubs').get();
+
+      // Map documents to ClubModel list
       final clubList =
           data.docs.map((clubs) => ClubModel.fromSnapshot(clubs)).toList();
       allClubs.assignAll(clubList);
       print('allClubs: $allClubs');
 
+      // Replace image field with actual download URL from Firebase Storage
       for (var club in clubList) {
         final imgURL =
             await Get.find<FirebaseStorageService>().getClubImage(club.image);
-        club.image = imgURL!; //control imgURL
+        club.image = imgURL!; // Assign URL to image field
       }
+
+      // Update observable list with updated club data
       allClubs.assignAll(clubList);
-    } catch (e) {}
+    } catch (e) {
+      // Handle any errors silently (could be improved with logging or user feedback)
+    }
   }
 }

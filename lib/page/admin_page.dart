@@ -19,14 +19,17 @@ class AdminPage extends StatefulWidget {
   State<AdminPage> createState() => _AdminPageState();
 }
 
+// Global variables
 String city = '';
 String userSearched = FirebaseAuth.instance.currentUser!.email.toString();
 List<String> docIds = [];
 String mtoken = '';
 
+// Injecting the AdminController instance via GetX
 AdminController adminController = Get.put(AdminController());
 
 class _AdminPageState extends State<AdminPage> {
+  /// Fetch document IDs for the currently authenticated admin's club(s)
   Future getDocId() async {
     String email = FirebaseAuth.instance.currentUser!.email.toString();
     await FirebaseFirestore.instance
@@ -34,13 +37,14 @@ class _AdminPageState extends State<AdminPage> {
         .where('admin email', isEqualTo: email)
         .get()
         .then((snapshot) => snapshot.docs.forEach((document) {
-              print(document.reference);
+              print(document.reference); // Debug: Print document reference
               docIds.add(document.reference.id);
             }));
   }
 
   @override
   void initState() {
+    // Initialize notifications, tokens, and Firestore data
     requestPermission();
     getToken();
     getDocId();
@@ -48,6 +52,7 @@ class _AdminPageState extends State<AdminPage> {
     super.initState();
   }
 
+  /// Initializes AdminController and FirebaseStorageService
   Future<AdminController> getData() async {
     adminController = await Get.put(AdminController());
     Get.lazyPut(() => FirebaseStorageService());
@@ -57,15 +62,14 @@ class _AdminPageState extends State<AdminPage> {
 
   @override
   Widget build(BuildContext context) {
-    getDocId(); //  list1 = [];
+    // Redundant fetch (can be optimized), re-fetches doc IDs
+    getDocId();
 
     return MediaQuery(
         data: MediaQuery.of(context)
             .copyWith(textScaler: const TextScaler.linear(1.2)),
         child: Scaffold(
             appBar: TopBarHome(context),
-            //bottomNavigationBar: BottomBar(w, h, context,),
-            //drawer: const NavigationDrawer(),
             body: FutureBuilder<DocumentSnapshot>(
               future: FirebaseFirestore.instance
                   .collection('Clubs')
@@ -73,18 +77,22 @@ class _AdminPageState extends State<AdminPage> {
                   .get(),
               builder: (((context, snapshot) {
                 if (snapshot.connectionState == ConnectionState.done) {
+                  // Club data successfully loaded
                   Map<String, dynamic> club =
                       snapshot.data!.data() as Map<String, dynamic>;
 
+                  // Render the admin screen with loaded data
                   return AdminPageScreen(
                       adminClub: club, daySelected: widget.day);
                 } else {
+                  // Loading or no data available
                   return Container();
                 }
               })),
             )));
   }
 
+  /// Custom AppBar (not currently used)
   AppBar buildAppBar() {
     return AppBar(
       elevation: 0,
@@ -95,6 +103,7 @@ class _AdminPageState extends State<AdminPage> {
   }
 }
 
+/// Drawer component with menu items and user header
 class NavigationDrawer extends StatelessWidget {
   const NavigationDrawer({
     super.key,
@@ -116,6 +125,7 @@ class NavigationDrawer extends StatelessWidget {
   }
 }
 
+/// Requests push notification permissions from the user
 void requestPermission() async {
   FirebaseMessaging messaging = FirebaseMessaging.instance;
 
@@ -138,6 +148,7 @@ void requestPermission() async {
   }
 }
 
+/// Retrieves the FCM device token and stores it in Firestore
 void getToken() async {
   await FirebaseMessaging.instance.getToken().then((token) {
     mtoken = token!;
@@ -147,6 +158,7 @@ void getToken() async {
   });
 }
 
+/// Saves the device's FCM token under the current club document
 void saveToken(String token) async {
   await FirebaseFirestore.instance
       .collection('Clubs')

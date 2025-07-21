@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:go_router/go_router.dart';
 import 'package:sports_hub_ios/page/verify_phone_page.dart';
 import 'package:sports_hub_ios/widgets/loading_screen.dart';
 
@@ -17,12 +18,12 @@ class _VerifyPhonePageStartState extends State<VerifyPhonePageStart> {
     print('verify phone number start');
 
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      Navigator.of(context).pushReplacement(MaterialPageRoute(
-          builder: (context) => VerifyPhonePage(
-            h: 620,
-            w: 485,
-            size: Size(485, 620),
-          )));
+      context.go('/verify-phone-page',
+      extra: {
+            'h': 620,
+            'w': 485,
+            'size': Size(485, 620),
+  });
     });
 
     return LoadingScreen();

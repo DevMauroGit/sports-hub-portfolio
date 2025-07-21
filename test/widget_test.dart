@@ -7,13 +7,28 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:go_router/go_router.dart';
 
 import 'package:sports_hub_ios/main.dart';
+import 'package:sports_hub_ios/page/home_page.dart';
+import 'package:sports_hub_ios/page/login_page.dart';
+import 'package:sports_hub_ios/page/start_page.dart';
+import 'package:sports_hub_ios/page/verify_email_page.dart';
+import 'package:sports_hub_ios/page/verify_phone_page_start.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+    await tester.pumpWidget(MyApp(router: GoRouter(
+      initialLocation: '/',
+      routes: [
+        GoRoute(path: '/', builder: (context, state) => const StartPage()),
+        GoRoute(path: '/login', builder: (context, state) => const LoginPage()),
+        GoRoute(path: '/home', builder: (context, state) => const HomePage()),
+        GoRoute(path: '/verify-email', builder: (context, state) => const VerifyEmailPage()),
+        GoRoute(path: '/verify-phone', builder: (context, state) => const VerifyPhonePageStart()),
+      ],
+    )));
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);

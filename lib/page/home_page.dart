@@ -20,6 +20,7 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
+// Global variables for user info and Firestore document IDs
 String city = '';
 String cityCreate = '';
 String userSearched = FirebaseAuth.instance.currentUser!.email.toString();
@@ -27,6 +28,7 @@ List<String> docIds = [];
 String mtoken = '';
 
 class _HomePageState extends State<HomePage> {
+  // Fetch the document IDs related to the current user from Firestore
   Future getDocId() async {
     String email = FirebaseAuth.instance.currentUser!.email.toString();
     await FirebaseFirestore.instance
@@ -39,15 +41,20 @@ class _HomePageState extends State<HomePage> {
             }));
   }
 
+  // Update the user information in Firestore, particularly the password if it has changed
   Future updateInfo() async {
     String email = FirebaseAuth.instance.currentUser!.email.toString();
     final controller = Get.put(ProfileController());
+
     final snapshot = await FirebaseFirestore.instance
         .collection("User")
         .where('email', isEqualTo: email)
         .get();
+
+    // Map Firestore document snapshot to UserModel
     final userData = snapshot.docs.map((e) => UserModel.fromSnapshot(e)).single;
 
+    // Create a new UserModel instance with updated password if a new one was provided
     final user = UserModel(
       id: userData.id,
       email: userData.email,
@@ -69,66 +76,75 @@ class _HomePageState extends State<HomePage> {
       token: userData.token,
     );
 
+    // Call update function from controller to update user data in Firestore
     await controller.updateUser(user);
   }
 
   @override
   void initState() {
+    super.initState();
+    // Request permissions for notifications and get Firebase Cloud Messaging token
     requestPermission();
     getToken();
+    // Fetch document IDs of the current user
     getDocId();
+    // Initialize notification settings
     NotificationService().initNotification();
-
-    super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
+    // Update the selected page icon (used in bottom navigation)
     selectedPage = iconList.elementAt(1);
-    Future.delayed(const Duration(milliseconds: 355));
 
+    // Refresh document IDs and user info on build (consider optimization)
     getDocId();
-
     updateInfo();
 
     CollectionReference user = FirebaseFirestore.instance.collection('User');
     String email = FirebaseAuth.instance.currentUser!.email.toString();
 
     return PopScope(
-        canPop: false,
-        child: MediaQuery(
-            data: MediaQuery.of(context)
-                .copyWith(textScaler: const TextScaler.linear(1.2)),
-            child: FutureBuilder<DocumentSnapshot>(
-                future: user.doc(email).get(),
-                builder: (((context, snapshot) {
-                  if (snapshot.connectionState == ConnectionState.done) {
-                    Map<String, dynamic> profile =
-                        snapshot.data!.data() as Map<String, dynamic>;
+      canPop: false,
+      child: MediaQuery(
+        // Adjust text scaling to 1.2 for accessibility
+        data: MediaQuery.of(context)
+            .copyWith(textScaler: const TextScaler.linear(1.2)),
+        child: FutureBuilder<DocumentSnapshot>(
+          // Retrieve user profile data asynchronously from Firestore
+          future: user.doc(email).get(),
+          builder: (context, snapshot) {
+            if (snapshot.connectionState == ConnectionState.done) {
+              // Extract user profile data from document snapshot
+              Map<String, dynamic> profile =
+                  snapshot.data!.data() as Map<String, dynamic>;
 
-                    return Scaffold(
-                      appBar: TopBarHome(context),
-                      bottomNavigationBar: BottomBar(
-                        context,
-                      ),
-                      //drawer: const NavigationDrawer(),
-                      body: HomePageScreen(user: profile),
-                    );
-                  }
-                  return Container();
-                })))));
+              // Build scaffold with app bar, bottom navigation, and main content
+              return Scaffold(
+                appBar: TopBarHome(context),
+                bottomNavigationBar: BottomBar(context),
+                body: HomePageScreen(user: profile),
+              );
+            }
+            // Show an empty container while loading data
+            return Container();
+          },
+        ),
+      ),
+    );
   }
 }
 
+// Retrieve Firebase Cloud Messaging token for push notifications
 void getToken() async {
   await FirebaseMessaging.instance.getToken().then((token) {
     mtoken = token!;
     print('My token is $mtoken');
-
     saveToken(token);
   });
 }
 
+// Save FCM token in Firestore under the current user's document
 void saveToken(String token) async {
   await FirebaseFirestore.instance
       .collection('User')
@@ -136,6 +152,7 @@ void saveToken(String token) async {
       .update({'token': token});
 }
 
+// Request notification permission from the user
 void requestPermission() async {
   FirebaseMessaging messaging = FirebaseMessaging.instance;
 
@@ -149,6 +166,7 @@ void requestPermission() async {
     sound: false,
   );
 
+  // Log the authorization status for debugging purposes
   if (settings.authorizationStatus == AuthorizationStatus.authorized) {
     print('User granted permissions');
   } else if (settings.authorizationStatus == AuthorizationStatus.provisional) {
@@ -158,10 +176,9 @@ void requestPermission() async {
   }
 }
 
+// Navigation drawer widget containing the app menu
 class NavigationDrawer extends StatelessWidget {
-  const NavigationDrawer({
-    super.key,
-  });
+  const NavigationDrawer({super.key});
 
   @override
   Widget build(BuildContext context) {

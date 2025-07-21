@@ -17,6 +17,7 @@ class FriendModel {
   int win_tennis;
   String token;
 
+  /// Constructor for FriendModel with required and optional fields
   FriendModel(
       {required this.username,
       required this.id,
@@ -34,6 +35,7 @@ class FriendModel {
       required this.win_tennis,
       required this.token});
 
+  /// Creates a FriendModel instance from a JSON map
   FriendModel.fromJson(Map<String, dynamic> json)
       : username = json['username'] as String,
         id = json['id'] as String,
@@ -51,6 +53,7 @@ class FriendModel {
         win_tennis = json['win_tennis'] as int,
         token = json['token'] as String;
 
+  /// Creates a FriendModel instance from a Firestore document snapshot
   FriendModel.fromSnapshot(DocumentSnapshot<Map<String, dynamic>> json)
       : username = json['username'],
         id = json['id'],
@@ -68,6 +71,7 @@ class FriendModel {
         win_tennis = json['win_tennis'],
         token = json['token'];
 
+  /// Converts the FriendModel instance into a JSON map
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
     data['id'] = id;

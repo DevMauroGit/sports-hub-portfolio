@@ -7,11 +7,15 @@ import 'package:get/get.dart';
 import 'package:sports_hub_ios/controllers/auth_controller.dart';
 import 'package:sports_hub_ios/models/phone_model.dart';
 import 'package:sports_hub_ios/models/user_model.dart';
-import 'package:sports_hub_ios/page/login_page.dart';
-import 'package:sports_hub_ios/page/ospite_page.dart';
+import 'package:go_router/go_router.dart';
 import 'package:sports_hub_ios/utils/constants.dart';
 
-const List<String> list = <String>['Città o provincia', 'Pavia', 'Milano', 'Lodi'];
+const List<String> list = <String>[
+  'Città o provincia',
+  'Pavia',
+  'Milano',
+  'Lodi'
+];
 
 String newPassword = '';
 
@@ -62,44 +66,31 @@ class _SignUpPageState extends State<SignUpPage> {
       allUser.assignAll(teammateList);
     } catch (e) {}
   }
-  
+
   String dropdownValue = 'Città o provincia';
 
   @override
   Widget build(BuildContext context) {
-    //getAllPhone().whenComplete(() => print(allPhone.first.phoneNumber));
-    //getAllUser().whenComplete(() => print(allUser.first.email));
-
-    return MediaQuery(
-          data: MediaQuery.of(context).copyWith(textScaler: const TextScaler.linear(1.0)),
-          child: Container(
-      decoration: BoxDecoration(
-        color: kBackgroundColor2,
-        image: DecorationImage(
-          image: const AssetImage("assets/images/sports_background1.jpg"),
-          fit: BoxFit.cover,
-          colorFilter: ColorFilter.mode(
-              kBackgroundColor2.withOpacity(0.3), BlendMode.dstATop),
-        ),
-      ),
-      child: Scaffold(
-        backgroundColor: Colors.transparent,
-        resizeToAvoidBottomInset: false,
-        body: _page(context),
-        //Stack(children: [
-        //  Positioned(top: 80, child: _buildTop()),
-        //  Positioned(bottom: 0, child: _buildBottom()),
-      ),
-    ));
-  }
-
-  Widget _page(context) {
     double w = MediaQuery.of(context).size.width;
     double h = MediaQuery.of(context).size.height;
 
-    
-    print(h);
-    return Stack(children: [
+    return MediaQuery(
+        data: MediaQuery.of(context)
+            .copyWith(textScaler: const TextScaler.linear(1.1)),
+        child: Container(
+          decoration: BoxDecoration(
+            color: kBackgroundColor2,
+            image: DecorationImage(
+              image: const AssetImage("assets/images/sports_background1.jpg"),
+              fit: BoxFit.cover,
+              colorFilter: ColorFilter.mode(
+                  kBackgroundColor2.withOpacity(0.3), BlendMode.dstATop),
+            ),
+          ),
+          child: Scaffold(
+            backgroundColor: Colors.transparent,
+            resizeToAvoidBottomInset: false,
+            body: Stack(children: [
       Positioned(
         bottom: 0,
         child: SingleChildScrollView(
@@ -161,7 +152,7 @@ class _SignUpPageState extends State<SignUpPage> {
                                         color: Colors.white, width: 1.0)),
                                 enabledBorder: const OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: Colors.white, width: 1.0)),
+                                        color: Colors.transparent, width: 1.0)),
                                 border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(30))),
                             autovalidateMode:
@@ -201,7 +192,7 @@ class _SignUpPageState extends State<SignUpPage> {
                                         color: Colors.white, width: 1.0)),
                                 enabledBorder: const OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: Colors.white, width: 1.0)),
+                                        color: Colors.transparent, width: 1.0)),
                                 border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(30))),
                             autovalidateMode:
@@ -243,7 +234,7 @@ class _SignUpPageState extends State<SignUpPage> {
                                         color: Colors.white, width: 1.0)),
                                 enabledBorder: const OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: Colors.white, width: 1.0)),
+                                        color: Colors.transparent, width: 1.0)),
                                 border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(30))),
                             autovalidateMode:
@@ -272,60 +263,38 @@ class _SignUpPageState extends State<SignUpPage> {
                           child: Row(
                             children: [
                               const Icon(
-                                Icons.location_city, 
-                                color: Colors.deepOrangeAccent, 
-                                size: 30,),
+                                Icons.location_city,
+                                color: Colors.deepOrangeAccent,
+                                size: 30,
+                              ),
                               Container(
                                 width: w * 0.55,
-                                padding: const EdgeInsets.symmetric(horizontal: 10),
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 10),
                                 child: DropdownButton<String>(
-                                      value: dropdownValue,
-                                      isExpanded: true,
-                                      icon: const Icon(Icons.arrow_downward),
-                                      elevation: 8,
-                                      style: TextStyle(color: Colors.black,
-                                        fontSize: w > 355 ? 16 : 13),
-                                      onChanged: (String? value) {
-                                        setState(() {
-                                          dropdownValue = value!;
-                                        });
-                                      },
-                                      items: list.map<DropdownMenuItem<String>>((String value) {
-                                        return DropdownMenuItem<String>(
-                                          value: value,
-                                          child: Text(value),
-                                        );
-                                      }).toList(),
-                                    ),
+                                  value: dropdownValue,
+                                  isExpanded: true,
+                                  icon: const Icon(Icons.arrow_downward),
+                                  elevation: 8,
+                                  style: TextStyle(
+                                      color: Colors.black,
+                                      fontSize: w > 355 ? 16 : 13),
+                                  onChanged: (String? value) {
+                                    setState(() {
+                                      dropdownValue = value!;
+                                    });
+                                  },
+                                  items: list.map<DropdownMenuItem<String>>(
+                                      (String value) {
+                                    return DropdownMenuItem<String>(
+                                      value: value,
+                                      child: Text(value),
+                                    );
+                                  }).toList(),
+                                ),
                               ),
                             ],
                           ),
-                          
-                          
-                          
-                          
-   //                       TextFormField(
-     //                       inputFormatters: <TextInputFormatter>[
-       //                       UpperCaseTextFormatter()
-         //                   ],
-           //                 controller: cityController,
-             //               keyboardType: TextInputType.text,
-               //             style: TextStyle(
-                 //               color: Colors.black,
-                   //             fontSize: w > 355 ? 16 : 13),
-                     //       decoration: InputDecoration(
-                       //         hintText: "Città o provincia di gioco",
-                         //       prefixIcon: const Icon(Icons.location_city,
-                           //         color: Colors.deepOrangeAccent),
-                             //   focusedBorder: const OutlineInputBorder(
-                               //     borderSide: BorderSide(
-                                 //       color: Colors.white, width: 1.0)),
-    //                            enabledBorder: const OutlineInputBorder(
-      //                              borderSide: BorderSide(
-        //                                color: Colors.white, width: 1.0)),
-          //                      border: OutlineInputBorder(
-            //                        borderRadius: BorderRadius.circular(30))),
-              //            ),
                         ),
                         const SizedBox(height: 20),
                         Container(
@@ -355,7 +324,7 @@ class _SignUpPageState extends State<SignUpPage> {
                                         color: Colors.white, width: 1.0)),
                                 enabledBorder: const OutlineInputBorder(
                                     borderSide: BorderSide(
-                                        color: Colors.white, width: 1.0)),
+                                        color: Colors.transparent, width: 1.0)),
                                 border: OutlineInputBorder(
                                     borderRadius: BorderRadius.circular(30))),
                             autovalidateMode:
@@ -378,16 +347,8 @@ class _SignUpPageState extends State<SignUpPage> {
                               isLoadingS = true;
                             });
 
-                            getAllPhone().whenComplete(
-                                () => print(allPhone.first.phoneNumber));
-                            //getAllUser().whenComplete(() => print(allUser.first.email));
+                            getAllPhone();
 
-                            //const LoadingScreen();
-                            print(allPhone.length);
-                            for(int i=0; i< allPhone.length; i++){
-                              print(allPhone[i].phoneNumber);
-                            }
-                            
                             int c = 0;
                             final String username =
                                 usernameController.text.trim();
@@ -403,7 +364,6 @@ class _SignUpPageState extends State<SignUpPage> {
                                   ? c++
                                   : null;
                             }
-                            print(c);
                             newPassword = password;
 
                             //      for(int i=0; i<allUser.length; i++){
@@ -412,40 +372,64 @@ class _SignUpPageState extends State<SignUpPage> {
 
                             if (3 < username.length && username.length < 11) {
                               if (EmailValidator.validate(email)) {
-                                if (dropdownValue.toString().length < 10){
-                                if (9 <= phoneNumber.toString().length &&
-                                    phoneNumber.toString().length <= 11) {
-                                  if (c == allPhone.length) {
-                                    //       if(k == allUser.length){
+                                if (dropdownValue.toString().length < 10) {
+                                  if (9 <= phoneNumber.toString().length &&
+                                      phoneNumber.toString().length <= 11) {
+                                    if (c == allPhone.length) {
 
-                                    AuthController.instance.signUp(
-                                        email,
-                                        password,
-                                        username,
-                                        phoneNumber,
-                                        city,
-                                        w);
+                                      AuthController.instance.signUp(
+                                          email,
+                                          password,
+                                          username,
+                                          phoneNumber,
+                                          city,
+                                          w);
 
-                                    Future.delayed(Duration(seconds: 5))
-                                        .whenComplete(() => isLoadingS = false);
+                                      Future.delayed(Duration(seconds: 5))
+                                          .whenComplete(
+                                              () => isLoadingS = false);
+                                    } else {
+                                      Get.snackbar('', "",
+                                          snackPosition: SnackPosition.TOP,
+                                          titleText: Text(
+                                            'Numero di telefono già registrato',
+                                            style: TextStyle(
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.w800,
+                                              letterSpacing: 1,
+                                              fontSize: w < 380
+                                                  ? 13
+                                                  : w > 605
+                                                      ? 18
+                                                      : 15,
+                                            ),
+                                          ),
+                                          messageText: Text(
+                                            'Prova ad accedere',
+                                            style: TextStyle(
+                                              color: Colors.black,
+                                              fontWeight: FontWeight.w800,
+                                              letterSpacing: 1,
+                                              fontSize: w < 380
+                                                  ? 13
+                                                  : w > 605
+                                                      ? 18
+                                                      : 15,
+                                            ),
+                                          ),
+                                          duration: const Duration(seconds: 4),
+                                          backgroundColor:
+                                              Colors.redAccent.withOpacity(0.6),
+                                          colorText: Colors.black);
+                                      setState(() {
+                                        isLoadingS = false;
+                                      });
+                                    }
                                   } else {
                                     Get.snackbar('', "",
                                         snackPosition: SnackPosition.TOP,
                                         titleText: Text(
-                                          'Numero di telefono già registrato',
-                                          style: TextStyle(
-                                            color: Colors.black,
-                                            fontWeight: FontWeight.w800,
-                                            letterSpacing: 1,
-                                            fontSize: w < 380
-                                                ? 13
-                                                : w > 605
-                                                    ? 18
-                                                    : 15,
-                                          ),
-                                        ),
-                                        messageText: Text(
-                                          'Prova ad accedere',
+                                          'Inserisci un Numero di telefono valido',
                                           style: TextStyle(
                                             color: Colors.black,
                                             fontWeight: FontWeight.w800,
@@ -465,31 +449,6 @@ class _SignUpPageState extends State<SignUpPage> {
                                       isLoadingS = false;
                                     });
                                   }
-                                  
-                                } else {
-                                  Get.snackbar('', "",
-                                      snackPosition: SnackPosition.TOP,
-                                      titleText: Text(
-                                        'Inserisci un Numero di telefono valido',
-                                        style: TextStyle(
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.w800,
-                                          letterSpacing: 1,
-                                          fontSize: w < 380
-                                              ? 13
-                                              : w > 605
-                                                  ? 18
-                                                  : 15,
-                                        ),
-                                      ),
-                                      duration: const Duration(seconds: 4),
-                                      backgroundColor:
-                                          Colors.redAccent.withOpacity(0.6),
-                                      colorText: Colors.black);
-                                  setState(() {
-                                    isLoadingS = false;
-                                  });
-                                }
                                 } else {
                                   Get.snackbar('', "",
                                       snackPosition: SnackPosition.TOP,
@@ -569,7 +528,7 @@ class _SignUpPageState extends State<SignUpPage> {
                                   width: 120,
                                   alignment: Alignment.center,
                                   padding: EdgeInsets.all(5),
-                                  child: Container(
+                                  child: SizedBox(
                                       height: 20,
                                       width: 20,
                                       child: CircularProgressIndicator(
@@ -592,8 +551,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         ),
                         GestureDetector(
                           onTap: () {
-                            Get.to(() => const LoginPage(),
-                                transition: Transition.downToUp);
+                            context.go('/login');
                           },
                           child: Container(
                             margin: EdgeInsets.symmetric(vertical: h * 0.02),
@@ -618,14 +576,15 @@ class _SignUpPageState extends State<SignUpPage> {
                         SizedBox(height: 10),
                         GestureDetector(
                           onTap: () {
-                            Get.to(
-                                () => OspitePage(
-                                      city: 'Pavia',
-                                      h: h,
-                                      w: w,
-                                      page: 'games',
-                                    ),
-                                transition: Transition.downToUp);
+                            context.go(
+                              '/ospite',
+                              extra: {
+                                'city': 'Pavia',
+                                'h': h,
+                                'w': w,
+                                'page': 'games',
+                              },
+                            );
                           },
                           child: Container(
                             margin: EdgeInsets.only(bottom: h * 0.01),
@@ -652,9 +611,13 @@ class _SignUpPageState extends State<SignUpPage> {
               )),
         ),
       ),
-    ]);
+    ]),
+          ),
+        ));
   }
 }
+
+
 
 class UpperCaseTextFormatter extends TextInputFormatter {
   @override
